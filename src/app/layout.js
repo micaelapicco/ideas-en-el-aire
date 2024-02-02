@@ -23,9 +23,8 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="es">
       <body className={inter.className}>
-        <Navbar>
-          {children}
-        </Navbar>
+        <Navbar />
+        {children}
       </body>
     </html>
   );
