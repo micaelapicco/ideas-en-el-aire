@@ -1,4 +1,4 @@
-import Section from "../../components/Section";
+import Section from '../../components/Section'
 
 const EspacioPublicitario = () => {
   return (
@@ -13,7 +13,7 @@ const EspacioPublicitario = () => {
         <h1>En la web</h1>
       </Section>
     </main>
-  );
-};
+  )
+}
 
-export default EspacioPublicitario;
+export default EspacioPublicitario

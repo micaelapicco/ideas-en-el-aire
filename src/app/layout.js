@@ -1,9 +1,9 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { Plus_Jakarta_Sans } from 'next/font/google';
-import './globals.css';
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import { Plus_Jakarta_Sans } from 'next/font/google'
+import './globals.css'
 
-const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] });
+const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
 export const metadata = {
   title: 'Ideas en el Aire',
   description: 'Escuchá Ideas en el Aire en vivo por radio Quilpo',
@@ -15,12 +15,12 @@ export const metadata = {
     'San Marcos',
     'Córdoba',
     'Argentina',
-    'Radio argentina',
+    'Radio argentina'
   ],
   icons: {
-    icon: '/favicon.ico',
-  },
-};
+    icon: '/favicon.ico'
+  }
+}
 
 const RootLayout = ({ children }) => {
   return (
@@ -31,7 +31,7 @@ const RootLayout = ({ children }) => {
         <Footer />
       </body>
     </html>
-  );
-};
+  )
+}
 
-export default RootLayout;
+export default RootLayout

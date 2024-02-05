@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { Coffee, Facebook, Twitter, Instagram } from "./Icons";
+import Image from 'next/image'
+import { Coffee, Facebook, Twitter, Instagram } from './Icons'
 
 const Footer = () => {
   return (
@@ -36,7 +36,7 @@ const Footer = () => {
         </li>
       </ul>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
