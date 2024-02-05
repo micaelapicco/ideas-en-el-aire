@@ -1,30 +1,29 @@
-import Section from '../components/Section';
+import Section from "../components/Section";
 
 const Home = () => {
   return (
-    <main className='px-8 pb-10'>
-      <Section className='programming'>
-        <h2>Nuestra programación</h2>
+    <main className="px-8 pb-10">
+      <Section className="programming">
+        <h2 id="programming">Nuestra programación</h2>
       </Section>
-      <Section className='news'>
-        <h2>Mirá algunas de las noticias recientes</h2>
+      <Section className="news">
+        <h2 id="news">Mirá algunas de las noticias recientes</h2>
       </Section>
-      <Section className='sponsors'>
-        <h2>Conocé los negocios con los que trabajamos</h2>
-        <h2>Querés formar parte?</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-          auctor, tellus ut commodo pretium, diam turpis fringilla felis, eu
-          rhoncus ipsum nisi id orci. Curabitur dapibus elementum nisi ut
-          fermentum. Phasellus tellus lorem, fringilla sit amet sem nec, cursus
-          aliquet lectus. Donec molestie odio elit, nec consequat magna
-          scelerisque a. Donec efficitur facilisis magna accumsan maximus.
-          Maecenas placerat felis vitae elit eleifend, in dictum lectus
-          pharetra. Quisque at efficitur tellus.
-        </p>
+      <Section className="sponsors">
+        <article>
+          <h2 id="sponsors">Conocé los negocios con los que trabajamos</h2>
+        </article>
+        <article>
+          <h2>Querés formar parte?</h2>
+          <p>
+            Te invitamos a que visites nuestro espacio publicitario donde
+            encontraras promociones por radio, avisos, y la oportunidad de
+            aparecer junto a nuestros sponsors
+          </p>
+        </article>
       </Section>
-      <Section className='location'>
-        <h2>¡Conoce donde nos encontramos!</h2>
+      <Section className="location">
+        <h2 id="location">¡Conoce donde nos encontramos!</h2>
         <p>
           Ideas en el aire se encuentra en San Marcos Sierras, provincia de
           Córdoba. Te invitamos a que conozcas algunos de nuestros paisajes

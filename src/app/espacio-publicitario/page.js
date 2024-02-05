@@ -2,7 +2,7 @@ import Section from "../../components/Section";
 
 const EspacioPublicitario = () => {
   return (
-    <main>
+    <main className="px-8 pb-10 pt-24 min-h-screen">
       <Section className="monthly">
         <h1>Mensuales</h1>
       </Section>
