@@ -1,30 +1,34 @@
-import Navbar from "../components/Navbar";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { Plus_Jakarta_Sans } from 'next/font/google';
+import './globals.css';
 
-const inter = Inter({ subsets: ["latin"] });
-
+const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] });
 export const metadata = {
-  title: "Ideas en el Aire",
-  description: "Escuchá Ideas en el Aire en vivo por radio Quilpo",
+  title: 'Ideas en el Aire',
+  description: 'Escuchá Ideas en el Aire en vivo por radio Quilpo',
   keywords: [
-    "Radio",
-    "San Marcos Sierras",
-    "Radio en vivo",
-    "Radio Quilpo",
-    "San Marcos",
-    "Córdoba",
-    "Argentina",
-    "Radio argentina",
+    'Radio',
+    'San Marcos Sierras',
+    'Radio en vivo',
+    'Radio Quilpo',
+    'San Marcos',
+    'Córdoba',
+    'Argentina',
+    'Radio argentina',
   ],
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang="es">
-      <body className={inter.className}>
+    <html lang='es'>
+      <body className={`${jakarta.className}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

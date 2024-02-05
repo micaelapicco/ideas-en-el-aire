@@ -1,5 +1,5 @@
 const Section = ({ children }) => {
-  return <section>{children}</section>;
+  return <section className='mb-24'>{children}</section>;
 };
 
 export default Section;

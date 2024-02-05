@@ -1,15 +1,15 @@
-import Section from "../components/Section";
+import Section from '../components/Section';
 
 const Home = () => {
   return (
-    <main>
-      <Section className="programming">
+    <main className='px-8 pb-10'>
+      <Section className='programming'>
         <h2>Nuestra programación</h2>
       </Section>
-      <Section className="news">
+      <Section className='news'>
         <h2>Mirá algunas de las noticias recientes</h2>
       </Section>
-      <Section className="sponsors">
+      <Section className='sponsors'>
         <h2>Conocé los negocios con los que trabajamos</h2>
         <h2>Querés formar parte?</h2>
         <p>
@@ -23,7 +23,7 @@ const Home = () => {
           pharetra. Quisque at efficitur tellus.
         </p>
       </Section>
-      <Section className="location">
+      <Section className='location'>
         <h2>¡Conoce donde nos encontramos!</h2>
         <p>
           Ideas en el aire se encuentra en San Marcos Sierras, provincia de
