@@ -26,6 +26,33 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+/* Titles */
+h1 {
+  @apply text-base-content text-6xl;
+}
+h2 {
+  @apply text-base-content text-center text-4xl;
+}
+/* Galery - san marcos sierras */
+section .galery {
+  display: flex;
+  width: auto;
+  height: 430px;
+}
+.galery img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.galery img:hover {
+  cursor: auto;
+  width: 600px;
+  opacity: 1;
+  filter: contrast(120%);
+}
 
 @layer utilities {
   .text-balance {

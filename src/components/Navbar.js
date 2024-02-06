@@ -26,10 +26,10 @@ const Navbar = () => {
           <Link href="/#sponsors">Sponsors</Link>
         </li>
         <li>
-          <Link href="/#location">San Marcos Sierras</Link>
+          <Link href="/san-marcos-sierras">San Marcos Sierras</Link>
         </li>
         <li>
-          <Link href="/espacio-publicitario">Espacio publicitario</Link>
+          <Link href="/quienes-somos">Quienes somos?</Link>
         </li>
       </ul>
     </nav>
