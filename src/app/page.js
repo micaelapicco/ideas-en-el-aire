@@ -1,6 +1,7 @@
 import Section from "../components/Section";
 import Card from "../components/Card";
 import SponsorsList from "../components/SponsorsList";
+import { AssetOne, AssetPrimary } from "../assets/assets";
 
 const newsList = [
   {
@@ -23,7 +24,7 @@ const newsList = [
 const sponsorsList = [
   {
     title: "Tay",
-    image: "/images/Tay.jpeg",
+    image: "/images/Tay.png",
     link: "https://articulo.mercadolibre.com.ar/MLA-1619241544-miel-de-monte-tay-12kg-x3-_JM",
   },
   {
@@ -43,37 +44,37 @@ const sponsorsList = [
   },
   {
     title: "Selva C. Rovetta",
-    image: "/barquito.spng",
+    image: "/images/Selva-Rovetta.jpeg",
     link: "mailto:selvaclarovetta@gmail.com",
   },
   {
     title: "Sabores de la Montaña",
-    image: "/barquito.png",
+    image: "/images/Sabores-de-la-montaña.jpeg",
     link: "https://www.facebook.com/people/Sabores-de-la-Monta%C3%B1a/100057717631227/",
   },
   {
     title: "Kenai",
-    image: "/barquito.png",
+    image: "/images/Kenai.jpeg",
     link: "tel:3549551888",
   },
   {
     title: "Estudio Genera",
-    image: "/barquito.png",
+    image: "/images/Estudio-genera.jpeg",
     link: "https://www.estudiogenera.com/",
   },
   {
     title: "Bon Appetit",
-    image: "/barquito.png",
+    image: "/images/Bon-Appetit.jpeg",
     link: "tel:3549550614",
   },
   {
     title: "La Comarca a granel",
-    image: "/barquito.png",
+    image: "/images/La-comarca.jpeg",
     link: "https://www.instagram.com/lacomarcaagranel/?hl=es",
   },
   {
     title: "MeryHuén Holística",
-    image: "/barquito.png",
+    image: "/images/MeryHuen-Holistica.jpeg",
     link: "tel:1164543856",
   },
   {
@@ -88,7 +89,7 @@ const sponsorsList = [
   },
   {
     title: "Casa Malvón",
-    image: "/barquito.png",
+    image: "/images/Casa-Malvon.jpeg",
     link: "mailto:servicios@indot.com.ar",
   },
 ];
@@ -107,7 +108,10 @@ const Home = () => {
 
   return (
     <main className="px-8 pb-10 pt-24 min-h-screen">
-      <h1>Escuchanos en vivo por 100.7 FM</h1>
+      <div className="space-between flex mt-0">
+        <h1>Escuchanos en vivo por 100.7 FM</h1>
+        <AssetPrimary />
+      </div>
       <Section className="programming">
         <h2 id="programming">Nuestra programación</h2>
       </Section>
