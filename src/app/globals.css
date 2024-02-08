@@ -33,6 +33,17 @@ h1 {
 h2 {
   @apply text-base-content text-center text-4xl mb-10;
 }
+
+/* Button style */
+button {
+  @apply rounded-full py-2 px-4 font-bold hover:bg-blue-700;
+  background: rgb(183, 19, 117);
+  background: linear-gradient(
+    129deg,
+    rgba(183, 19, 117, 1) 0%,
+    rgba(252, 79, 0, 1) 100%
+  );
+}
 /* Galery - san marcos sierras */
 section .galery {
   display: flex;
