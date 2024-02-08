@@ -44,6 +44,25 @@ export const AssetOne = () => (
     </defs>
   </svg>
 )
+
+export const AssetTwo = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1002" viewBox="0 0 1920 1002" fill="none">
+<path d="M0 995C403.876 -346.821 1559.67 1342.43 2027 7" stroke="url(#paint0_linear_80_145)" strokeWidth="13" strokeLinecap="round"/>
+<defs>
+<linearGradient id="paint0_linear_80_145" x1="1013.5" y1="7" x2="1013.5" y2="995" gradientUnits="userSpaceOnUse">
+<stop stopColor="#FC4F00"/>
+<stop offset="1" stopColor="#FC4F00" stopOpacity="0"/>
+</linearGradient>
+</defs>
+</svg>
+)
+
+export const AssetThree = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="566" height="14" viewBox="0 0 566 14" fill="none">
+<path d="M0 7L559 7" stroke="#8B1874" strokeWidth="13" strokeLinecap="square"/>
+</svg>
+)
+
 export const AssetPrimary = () => (
   <svg
     width="1025"

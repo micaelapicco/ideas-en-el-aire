@@ -8,10 +8,10 @@ const Footer = () => {
       <div>
         <h3 className="uppercase">Contacto</h3>
         <Link href="mailto:mensajeroradioquilpo@gmail.com">
-          mensajeroradioquilpo@gmail.com
+          <p>mensajeroradioquilpo@gmail.com</p>
         </Link>
         <Link href="tel:03549-475474">
-        (03549) 475474
+          <p>(03549) 475474</p>
         </Link>
       </div>
 

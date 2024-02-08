@@ -1,7 +1,8 @@
 import Section from '../components/Section'
+import Button from '../components/Button'
 import Card from '../components/Card'
 import SponsorsList from '../components/SponsorsList'
-import { AssetOne, AssetPrimary } from '../assets/assets'
+import { AssetPrimary, AssetOne, AssetTwo, AssetThree } from '../assets/assets'
 
 const newsList = [
   {
@@ -108,30 +109,40 @@ const Home = () => {
 
   return (
     <main className="px-8 pb-10 pt-24 min-h-screen">
-      <header className="space-between flex mt-0">
+      <header className="flex space-between mt-0">
         <h1>Escuchanos en vivo por 100.7 FM</h1>
         <AssetPrimary />
       </header>
       <Section className="programming">
         <h2 id="programming">Nuestra programación</h2>
       </Section>
+      <AssetTwo />
       <Section className="news">
         <h2 id="news">Mirá algunas de las noticias recientes</h2>
         {newsToRender}
+        <Button>
+          Ver más
+        </Button>
       </Section>
+      <AssetOne />
       <Section className="sponsors">
-        <article>
+        <article className='pb-8'>
           <h2 id="sponsors">Conocé los negocios con los que trabajamos</h2>
           <SponsorsList sponsors={sponsorsList} />
         </article>
-        <article>
-          <h2>Querés formar parte?</h2>
-          <p>
+        <AssetThree />
+        <article className='flex justify-between'>
+          <h2>¿Querés formar parte?</h2>
+          <p className='text-center w-1/2'>
             Te invitamos a que visites nuestro espacio publicitario donde
             encontraras promociones por radio, avisos, y la oportunidad de
             aparecer junto a nuestros sponsors
           </p>
+          <Button>
+            Más información
+          </Button>
         </article>
+        <AssetThree />
       </Section>
       <Section className="location">
         <h2 id="location">¡Conoce donde nos encontramos!</h2>
@@ -141,6 +152,9 @@ const Home = () => {
           naturales, nuestras instituciones y actividades que se realizan,
           ¡entre otras cosas de interés!
         </p>
+        <Button>
+          Descubrí más
+        </Button>
       </Section>
     </main>
   )

@@ -39,6 +39,7 @@ section .galery {
   width: auto;
   height: 430px;
 }
+
 .galery img {
   width: 0px;
   flex-grow: 1;
