@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between p-8 items-center fixed w-full flex-no-wrap bg-base-100 left-0">
+    <nav className="flex justify-between p-8 items-center fixed w-full flex-no-wrap bg-base-100 left-0 z-10">
       <Link href="/">
         <div className="flex items-center space-x-4">
           <Image
@@ -29,7 +29,7 @@ const Navbar = () => {
           <Link href="/san-marcos-sierras">San Marcos Sierras</Link>
         </li>
         <li>
-          <Link href="/quienes-somos">Quienes somos?</Link>
+          <Link href="/quienes-somos">¿Quiénes somos?</Link>
         </li>
       </ul>
     </nav>

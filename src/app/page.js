@@ -1,6 +1,6 @@
 import Section from '../components/Section'
-import Button from '../components/Button'
 import Card from '../components/Card'
+import Button from '../components/Button'
 import SponsorsList from '../components/SponsorsList'
 import { AssetPrimary, AssetOne, AssetTwo, AssetThree } from '../assets/assets'
 
@@ -108,55 +108,55 @@ const Home = () => {
   })
 
   return (
-    <main className="px-8 pb-10 pt-24 min-h-screen">
-      <header className="flex space-between mt-0">
-        <h1>Escuchanos en vivo por 100.7 FM</h1>
+    <>
+      <header className="flex space-between mt-0 relative min-h-screen px-10 overflow-x-hidden">
+        <div className='hero-content flex-row-reverse'>
+        <h1 className='font-bold text-8xl text-balance leading-[7rem]'>
+          Escuchanos en vivo por <span className='text-primary font-extrabold'>100.7 FM</span>
+        </h1>
         <AssetPrimary />
+        </div>
       </header>
-      <Section className="programming">
-        <h2 id="programming">Nuestra programación</h2>
-      </Section>
-      <AssetTwo />
-      <Section className="news">
-        <h2 id="news">Mirá algunas de las noticias recientes</h2>
-        {newsToRender}
-        <Button>
-          Ver más
-        </Button>
-      </Section>
-      <AssetOne />
-      <Section className="sponsors">
-        <article className='pb-8'>
-          <h2 id="sponsors">Conocé los negocios con los que trabajamos</h2>
-          <SponsorsList sponsors={sponsorsList} />
-        </article>
-        <AssetThree />
-        <article className='flex justify-between'>
-          <h2>¿Querés formar parte?</h2>
-          <p className='text-center w-1/2'>
-            Te invitamos a que visites nuestro espacio publicitario donde
-            encontraras promociones por radio, avisos, y la oportunidad de
-            aparecer junto a nuestros sponsors
+      <main className="px-8 pb-10 pt-24 min-h-screen overflow-x-hidden">
+        <Section className="programming">
+          <h2 id="programming">Nuestra programación</h2>
+        </Section>
+        <AssetTwo />
+        <Section className="news">
+          <h2 id="news">Mirá algunas de las noticias recientes</h2>
+          <div className="flex">{newsToRender}</div>
+          <Button>Ver más</Button>
+        </Section>
+        <AssetOne />
+        <Section className="sponsors">
+          <article className="pb-8">
+            <h2 id="sponsors">Conocé los negocios con los que trabajamos</h2>
+            <SponsorsList sponsors={sponsorsList} />
+          </article>
+          <AssetThree />
+          <article className="flex justify-between">
+            <h2>¿Querés formar parte?</h2>
+            <p className="text-center w-1/2">
+              Te invitamos a que visites nuestro espacio publicitario donde
+              encontraras promociones por radio, avisos, y la oportunidad de
+              aparecer junto a nuestros sponsors
+            </p>
+            <Button>Más información</Button>
+          </article>
+          <AssetThree />
+        </Section>
+        <Section className="location">
+          <h2 id="location">¡Conoce donde nos encontramos!</h2>
+          <p>
+            Ideas en el aire se encuentra en San Marcos Sierras, provincia de
+            Córdoba. Te invitamos a que conozcas algunos de nuestros paisajes
+            naturales, nuestras instituciones y actividades que se realizan,
+            ¡entre otras cosas de interés!
           </p>
-          <Button>
-            Más información
-          </Button>
-        </article>
-        <AssetThree />
-      </Section>
-      <Section className="location">
-        <h2 id="location">¡Conoce donde nos encontramos!</h2>
-        <p>
-          Ideas en el aire se encuentra en San Marcos Sierras, provincia de
-          Córdoba. Te invitamos a que conozcas algunos de nuestros paisajes
-          naturales, nuestras instituciones y actividades que se realizan,
-          ¡entre otras cosas de interés!
-        </p>
-        <Button>
-          Descubrí más
-        </Button>
-      </Section>
-    </main>
+          <Button>Descubrí más</Button>
+        </Section>
+      </main>
+    </>
   )
 }
 

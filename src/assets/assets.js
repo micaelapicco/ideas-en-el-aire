@@ -1,5 +1,6 @@
 export const AssetOne = () => (
   <svg
+    className="absolute top-[90rem] -left-16 w-auto -z-50"
     width="2041"
     height="425"
     viewBox="0 0 2041 425"
@@ -46,30 +47,60 @@ export const AssetOne = () => (
 )
 
 export const AssetTwo = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1002" viewBox="0 0 1920 1002" fill="none">
-<path d="M0 995C403.876 -346.821 1559.67 1342.43 2027 7" stroke="url(#paint0_linear_80_145)" strokeWidth="13" strokeLinecap="round"/>
-<defs>
-<linearGradient id="paint0_linear_80_145" x1="1013.5" y1="7" x2="1013.5" y2="995" gradientUnits="userSpaceOnUse">
-<stop stopColor="#FC4F00"/>
-<stop offset="1" stopColor="#FC4F00" stopOpacity="0"/>
-</linearGradient>
-</defs>
-</svg>
+  <svg
+  className="absolute top-1/2 right-28 w-[50vw] -z-50"
+    xmlns="http://www.w3.org/2000/svg"
+    width="1920"
+    height="1002"
+    viewBox="0 0 1920 1002"
+    fill="none"
+  >
+    <path
+      d="M0 995C403.876 -346.821 1559.67 1342.43 2027 7"
+      stroke="url(#paint0_linear_80_145)"
+      strokeWidth="13"
+      strokeLinecap="round"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_80_145"
+        x1="1013.5"
+        y1="7"
+        x2="1013.5"
+        y2="995"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#FC4F00" />
+        <stop offset="1" stopColor="#FC4F00" stopOpacity="0" />
+      </linearGradient>
+    </defs>
+  </svg>
 )
 
 export const AssetThree = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="566" height="14" viewBox="0 0 566 14" fill="none">
-<path d="M0 7L559 7" stroke="#8B1874" strokeWidth="13" strokeLinecap="square"/>
-</svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="566"
+    height="14"
+    viewBox="0 0 566 14"
+    fill="none"
+  >
+    <path
+      d="M0 7L559 7"
+      stroke="#8B1874"
+      strokeWidth="13"
+      strokeLinecap="square"
+    />
+  </svg>
 )
 
 export const AssetPrimary = () => (
   <svg
-    width="1025"
-    height="1271"
+    style={{ aspectRatio: '5 / 6' }}
+      className="absolute -top-60 -right-28 w-[50vw] -z-50"
+    xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 1025 1271"
     fill="none"
-    xmlns="http://www.w3.org/2000/svg"
   >
     <path
       d="M305.09 238.52C305.029 264.004 312.016 289.009 325.28 310.77C352.706 290.047 371.462 259.88 377.914 226.116C384.365 192.352 378.053 157.395 360.2 128.02C343.01 140.843 329.069 157.521 319.497 176.713C309.926 195.904 304.991 217.074 305.09 238.52Z"
