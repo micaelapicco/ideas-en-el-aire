@@ -1,5 +1,6 @@
-import Section from "../../components/Section";
-import { AssetOne, AssetPrimary } from "../../assets/assets";
+import Section from '../../components/Section'
+import { AssetOne, AssetPrimary } from '../../assets/assets'
+
 const SanMarcosSierras = () => {
   return (
     <main className="px-8 pb-10 pt-24 min-h-screen">
@@ -37,7 +38,7 @@ const SanMarcosSierras = () => {
         <article>Horario de colectivo</article>
       </Section>
     </main>
-  );
-};
+  )
+}
 
-export default SanMarcosSierras;
+export default SanMarcosSierras

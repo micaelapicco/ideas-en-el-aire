@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link'
+import Image from 'next/image'
 
 const SponsorItem = ({ sponsor, key }) => {
   return (
@@ -13,7 +13,7 @@ const SponsorItem = ({ sponsor, key }) => {
         />
       </Link>
     </article>
-  );
-};
+  )
+}
 
-export default SponsorItem;
+export default SponsorItem

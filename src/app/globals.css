@@ -31,7 +31,7 @@ h1 {
   @apply text-base-content text-6xl;
 }
 h2 {
-  @apply text-base-content text-center text-4xl;
+  @apply text-base-content text-center text-4xl mb-10;
 }
 /* Galery - san marcos sierras */
 section .galery {
