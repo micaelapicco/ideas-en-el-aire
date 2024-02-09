@@ -98,13 +98,13 @@ const sponsorsList = [
 ]
 
 const Home = () => {
-  const newsToRender = newsList.map((news, index) => {
+  const newsToRender = newsList.map(({ title, description, image }, index) => {
     return (
       <Card
         key={index}
-        title={news.title}
-        description={news.description}
-        image={news.image}
+        title={title}
+        description={description}
+        image={image}
       />
     )
   })
@@ -127,7 +127,7 @@ const Home = () => {
         <AssetTwo />
         <Section className="news">
           <h2 id="news">Mirá algunas de las noticias recientes</h2>
-          <div className="flex">{newsToRender}</div>
+          <div className="flex gap-11">{newsToRender}</div>
           <Link href="/noticias">
             <Button>Ver más</Button>
           </Link>
@@ -138,9 +138,10 @@ const Home = () => {
             <h2 id="sponsors">Conocé los negocios con los que trabajamos</h2>
             <SponsorsList sponsors={sponsorsList} />
           </article>
-          <article className="flex justify-between">
-            <AssetThree />
-            <h2>¿Querés formar parte?</h2>
+          <article className="flex justify-between items-center before:content-['']">
+            {/* <AssetThree /> */}
+            <h2 className='text-left'>¿Querés formar parte?</h2>
+            <div className="flex flex-col items-center gap-11">
             <p className="text-center w-1/2">
               Te invitamos a que visites nuestro espacio publicitario donde
               encontraras promociones por radio, avisos, y la oportunidad de
@@ -149,10 +150,11 @@ const Home = () => {
             <Link href="/quienes-somos">
               <Button>Más información</Button>
             </Link>
-            <AssetThree />
+            </div>
+            {/* <AssetThree /> */}
           </article>
         </Section>
-        <Section className="location flex">
+        <Section className="location">
           <div className="card card-bordered border-4 border-purple-600 image-full w-[300px] transform skew-y-[8deg] -skew-x-[8deg] -left-28">
             <figure>
               <Image

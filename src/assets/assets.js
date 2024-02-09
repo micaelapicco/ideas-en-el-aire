@@ -9,14 +9,14 @@ export const AssetOne = () => (
     <path
       d="M-3 218.357C1005.39 -109.807 1384.18 571.658 1911 43"
       stroke="url(#paint0_linear_82_151)"
-      stroke-width="13"
-      stroke-linecap="round"
+      strokeWidth="13"
+      strokeLinecap="round"
     />
     <path
       d="M0 7C801.468 488.065 1037.98 -194.679 1917 173.649"
       stroke="url(#paint1_linear_82_151)"
-      stroke-width="13"
-      stroke-linecap="round"
+      strokeWidth="13"
+      strokeLinecap="round"
     />
     <defs>
       <linearGradient
@@ -27,8 +27,8 @@ export const AssetOne = () => (
         y2="347.423"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#8B1874" />
-        <stop offset="0.455" stop-color="#8B1874" stop-opacity="0.2" />
+        <stop stopColor="#8B1874" />
+        <stop offset="0.455" stopColor="#8B1874" stopOpacity="0.2" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_82_151"
@@ -38,12 +38,12 @@ export const AssetOne = () => (
         y2="173.649"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FC4F00" />
-        <stop offset="0.65" stop-color="#FC4F00" stop-opacity="0" />
+        <stop stopColor="#FC4F00" />
+        <stop offset="0.65" stopColor="#FC4F00" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>
-);
+)
 
 export const AssetTwo = () => (
   <svg
@@ -56,8 +56,8 @@ export const AssetTwo = () => (
     <path
       d="M7 397C389.556 -132.666 1484.34 534.145 1927 7"
       stroke="url(#paint0_linear_80_145)"
-      stroke-width="13"
-      stroke-linecap="round"
+      strokeWidth="13"
+      strokeLinecap="round"
     />
     <defs>
       <linearGradient
@@ -68,12 +68,12 @@ export const AssetTwo = () => (
         y2="397"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FC4F00" />
-        <stop offset="1" stop-color="#FC4F00" stop-opacity="0" />
+        <stop stopColor="#FC4F00" />
+        <stop offset="1" stopColor="#FC4F00" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>
-);
+)
 
 export const AssetThree = () => (
   <svg
@@ -90,7 +90,7 @@ export const AssetThree = () => (
       strokeLinecap="square"
     />
   </svg>
-);
+)
 
 export const AssetFour = () => (
   <svg
@@ -103,8 +103,8 @@ export const AssetFour = () => (
     <path
       d="M-12 397C370.556 -132.666 1465.34 534.145 1908 7"
       stroke="url(#paint0_linear_254_30)"
-      stroke-width="13"
-      stroke-linecap="round"
+      strokeWidth="13"
+      strokeLinecap="round"
     />
     <defs>
       <linearGradient
@@ -115,16 +115,16 @@ export const AssetFour = () => (
         y2="397"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#8B1874" />
-        <stop offset="1" stop-color="#8B1874" stop-opacity="0" />
+        <stop stopColor="#8B1874" />
+        <stop offset="1" stopColor="#8B1874" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>
-);
+)
 
 export const AssetPrimary = () => (
   <svg
-    style={{ aspectRatio: "5 / 6" }}
+    style={{ aspectRatio: '5 / 6' }}
     className="absolute -top-60 -right-28 w-[50vw] -z-50"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 1025 1271"
@@ -341,4 +341,4 @@ export const AssetPrimary = () => (
       strokeMiterlimit="10"
     />
   </svg>
-);
+)

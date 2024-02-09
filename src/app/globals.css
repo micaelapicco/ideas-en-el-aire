@@ -4,28 +4,8 @@
 
 :root {
   @apply text-base-content;
-  /* --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
 /* Titles */
 h1 {
   @apply text-base-content text-6xl;
@@ -34,16 +14,6 @@ h2 {
   @apply text-base-content text-center text-4xl font-semibold mb-10;
 }
 
-/* Button style */
-button {
-  @apply rounded-full py-2 px-4 font-bold hover:bg-blue-700;
-  background: rgb(183, 19, 117);
-  background: linear-gradient(
-    129deg,
-    rgba(183, 19, 117, 1) 0%,
-    rgba(252, 79, 0, 1) 100%
-  );
-}
 /* Galery - san marcos sierras */
 section .galery {
   display: flex;
