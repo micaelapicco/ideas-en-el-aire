@@ -1,81 +1,79 @@
 export const AssetOne = () => (
   <svg
-    className="absolute top-[90rem] -left-16 w-auto -z-50"
-    width="2041"
-    height="425"
-    viewBox="0 0 2041 425"
+    width="1920"
+    height="259"
+    viewBox="0 0 1920 259"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M7 418C1038.29 -180.134 1495.21 970.567 2034 7"
-      stroke="url(#paint0_linear_78_1234)"
-      strokeWidth="13"
-      strokeLinecap="round"
+      d="M-3 218.357C1005.39 -109.807 1384.18 571.658 1911 43"
+      stroke="url(#paint0_linear_82_151)"
+      stroke-width="13"
+      stroke-linecap="round"
     />
     <path
-      d="M59 80.5C863.186 799.582 1100.5 -220.963 1982.5 329.602"
-      stroke="url(#paint1_linear_78_1234)"
-      strokeWidth="13"
-      strokeLinecap="round"
+      d="M0 7C801.468 488.065 1037.98 -194.679 1917 173.649"
+      stroke="url(#paint1_linear_82_151)"
+      stroke-width="13"
+      stroke-linecap="round"
     />
     <defs>
       <linearGradient
-        id="paint0_linear_78_1234"
-        x1="965"
-        y1="242.244"
-        x2="965"
-        y2="653.243"
+        id="paint0_linear_82_151"
+        x1="933.724"
+        y1="121.929"
+        x2="933.724"
+        y2="347.423"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#8B1874" />
-        <stop offset="0.455" stopColor="#8B1874" stopOpacity="0.2" />
+        <stop stop-color="#8B1874" />
+        <stop offset="0.455" stop-color="#8B1874" stop-opacity="0.2" />
       </linearGradient>
       <linearGradient
-        id="paint1_linear_78_1234"
-        x1="1035.5"
-        y1="115.782"
-        x2="1035.5"
-        y2="329.602"
+        id="paint1_linear_82_151"
+        x1="973.201"
+        y1="30.6037"
+        x2="973.201"
+        y2="173.649"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#FC4F00" />
-        <stop offset="0.65" stopColor="#FC4F00" stopOpacity="0" />
+        <stop stop-color="#FC4F00" />
+        <stop offset="0.65" stop-color="#FC4F00" stop-opacity="0" />
       </linearGradient>
     </defs>
   </svg>
-)
+);
 
 export const AssetTwo = () => (
   <svg
-  className="absolute top-1/2 right-28 w-[50vw] -z-50"
-    xmlns="http://www.w3.org/2000/svg"
-    width="1920"
-    height="1002"
-    viewBox="0 0 1920 1002"
+    width="1916"
+    height="404"
+    viewBox="0 0 1916 404"
     fill="none"
+    xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M0 995C403.876 -346.821 1559.67 1342.43 2027 7"
+      d="M7 397C389.556 -132.666 1484.34 534.145 1927 7"
       stroke="url(#paint0_linear_80_145)"
-      strokeWidth="13"
-      strokeLinecap="round"
+      stroke-width="13"
+      stroke-linecap="round"
     />
     <defs>
       <linearGradient
         id="paint0_linear_80_145"
-        x1="1013.5"
+        x1="967"
         y1="7"
-        x2="1013.5"
-        y2="995"
+        x2="967"
+        y2="397"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#FC4F00" />
-        <stop offset="1" stopColor="#FC4F00" stopOpacity="0" />
+        <stop stop-color="#FC4F00" />
+        <stop offset="1" stop-color="#FC4F00" stop-opacity="0" />
       </linearGradient>
     </defs>
   </svg>
-)
+);
 
 export const AssetThree = () => (
   <svg
@@ -92,12 +90,42 @@ export const AssetThree = () => (
       strokeLinecap="square"
     />
   </svg>
-)
+);
+
+export const AssetFour = () => (
+  <svg
+    width="1915"
+    height="404"
+    viewBox="0 0 1915 404"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M-12 397C370.556 -132.666 1465.34 534.145 1908 7"
+      stroke="url(#paint0_linear_254_30)"
+      stroke-width="13"
+      stroke-linecap="round"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_254_30"
+        x1="948"
+        y1="7"
+        x2="948"
+        y2="397"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="#8B1874" />
+        <stop offset="1" stop-color="#8B1874" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
 
 export const AssetPrimary = () => (
   <svg
-    style={{ aspectRatio: '5 / 6' }}
-      className="absolute -top-60 -right-28 w-[50vw] -z-50"
+    style={{ aspectRatio: "5 / 6" }}
+    className="absolute -top-60 -right-28 w-[50vw] -z-50"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 1025 1271"
     fill="none"
@@ -313,4 +341,4 @@ export const AssetPrimary = () => (
       strokeMiterlimit="10"
     />
   </svg>
-)
+);
