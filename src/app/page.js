@@ -3,6 +3,8 @@ import Card from '../components/Card'
 import Button from '../components/Button'
 import SponsorsList from '../components/SponsorsList'
 import { AssetPrimary, AssetOne, AssetTwo, AssetThree } from '../assets/assets'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const newsList = [
   {
@@ -110,11 +112,12 @@ const Home = () => {
   return (
     <>
       <header className="flex space-between mt-0 relative min-h-screen px-10 overflow-x-hidden">
-        <div className='hero-content flex-row-reverse'>
-        <h1 className='font-bold text-8xl text-balance leading-[7rem]'>
-          Escuchanos en vivo por <span className='text-primary font-extrabold'>100.7 FM</span>
-        </h1>
-        <AssetPrimary />
+        <div className="hero-content flex-row-reverse">
+          <h1 className="font-bold text-8xl text-balance leading-[7rem]">
+            Escuchanos en vivo por{' '}
+            <span className="text-primary font-extrabold">100.7 FM</span>
+          </h1>
+          <AssetPrimary />
         </div>
       </header>
       <main className="px-8 pb-10 pt-24 min-h-screen overflow-x-hidden">
@@ -125,7 +128,9 @@ const Home = () => {
         <Section className="news">
           <h2 id="news">Mirá algunas de las noticias recientes</h2>
           <div className="flex">{newsToRender}</div>
-          <Button>Ver más</Button>
+          <Link href="/noticias">
+            <Button>Ver más</Button>
+          </Link>
         </Section>
         <AssetOne />
         <Section className="sponsors">
@@ -133,27 +138,43 @@ const Home = () => {
             <h2 id="sponsors">Conocé los negocios con los que trabajamos</h2>
             <SponsorsList sponsors={sponsorsList} />
           </article>
-          <AssetThree />
           <article className="flex justify-between">
+            <AssetThree />
             <h2>¿Querés formar parte?</h2>
             <p className="text-center w-1/2">
               Te invitamos a que visites nuestro espacio publicitario donde
               encontraras promociones por radio, avisos, y la oportunidad de
               aparecer junto a nuestros sponsors
             </p>
-            <Button>Más información</Button>
+            <Link href="/quienes-somos">
+              <Button>Más información</Button>
+            </Link>
+            <AssetThree />
           </article>
-          <AssetThree />
         </Section>
-        <Section className="location">
-          <h2 id="location">¡Conoce donde nos encontramos!</h2>
-          <p>
-            Ideas en el aire se encuentra en San Marcos Sierras, provincia de
-            Córdoba. Te invitamos a que conozcas algunos de nuestros paisajes
-            naturales, nuestras instituciones y actividades que se realizan,
-            ¡entre otras cosas de interés!
-          </p>
-          <Button>Descubrí más</Button>
+        <Section className="location flex">
+          <div className="card card-bordered border-4 border-purple-600 image-full w-[300px] transform skew-y-[8deg] -skew-x-[8deg] -left-28">
+            <figure>
+              <Image
+                src="/barquito.png"
+                alt="Barquito"
+                width={300}
+                height={300}
+              />
+            </figure>
+          </div>
+          <div className="flex flex-col items-center text-center space-y-12">
+            <h2 id="location">¡Conocé donde nos encontramos!</h2>
+            <p>
+              Ideas en el aire se encuentra en San Marcos Sierras, provincia de
+              Córdoba. Te invitamos a que conozcas algunos de nuestros paisajes
+              naturales, nuestras instituciones y actividades que se realizan,
+              ¡entre otras cosas de interés!
+            </p>
+            <Link href="/san-marcos-sierras">
+              <Button>Descubrí más</Button>
+            </Link>
+          </div>
         </Section>
       </main>
     </>

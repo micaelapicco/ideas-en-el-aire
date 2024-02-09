@@ -31,7 +31,7 @@ h1 {
   @apply text-base-content text-6xl;
 }
 h2 {
-  @apply text-base-content text-center text-4xl mb-10;
+  @apply text-base-content text-center text-4xl font-semibold mb-10;
 }
 
 /* Button style */

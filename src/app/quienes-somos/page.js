@@ -1,4 +1,4 @@
-import Section from "../../components/Section";
+import Section from '../../components/Section'
 
 const QuienesSomos = () => {
   return (
@@ -14,7 +14,7 @@ const QuienesSomos = () => {
         <h2>En la web</h2>
       </Section>
     </main>
-  );
-};
+  )
+}
 
-export default QuienesSomos;
+export default QuienesSomos
