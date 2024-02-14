@@ -8,19 +8,22 @@ import Image from 'next/image'
 
 const newsList = [
   {
-    title: 'Noticia 1',
-    description: 'Descripción de la noticia 1',
-    image: '/barquito.png'
+    title: 'Nuevas reservas naturales',
+    description:
+      'Se trata de la Orco Quebrancho en San Marcos Sierras y la de Paravachasca. Qué recursos naturales y culturales se conservan. Qué dicen los especialistas en el tema.',
+    image: '/images/natural-reserves-new.png'
   },
   {
-    title: 'Noticia 2',
-    description: 'Descripción de la noticia 2',
-    image: '/barquito.png'
+    title: 'Vendía drogas a menores',
+    description:
+      'Un narcomenudista fue detenido luego de una serie de denuncias anónimas. El hombre de 38 años comercializaba drogas a menores de edad. Ocurrió en la localidad de (...)',
+    image: '/images/drugs-new.png'
   },
   {
-    title: 'Noticia 3',
-    description: 'Descripción de la noticia 3',
-    image: '/barquito.png'
+    title: 'Puma en San Marcos Sierras',
+    description:
+      'El felino fue capturado la semana pasada por Policía Ambiental de Córdoba. Ahora fue trasladado a una reserva donde convivirá con otros 17 pumas.',
+    image: '/images/puma-new.png'
   }
 ]
 
@@ -100,12 +103,7 @@ const sponsorsList = [
 const Home = () => {
   const newsToRender = newsList.map(({ title, description, image }, index) => {
     return (
-      <Card
-        key={index}
-        title={title}
-        description={description}
-        image={image}
-      />
+      <Card key={index} title={title} description={description} image={image} />
     )
   })
 
@@ -127,8 +125,10 @@ const Home = () => {
         <AssetTwo />
         <Section className="news">
           <h2 id="news">Mirá algunas de las noticias recientes</h2>
-          <div className="flex gap-11">{newsToRender}</div>
-          <Link href="/noticias">
+          <div className="flex gap-11 items-center justify-center mb-14">
+            {newsToRender}
+          </div>
+          <Link href="/noticias" className="flex justify-center">
             <Button>Ver más</Button>
           </Link>
         </Section>
@@ -138,36 +138,54 @@ const Home = () => {
             <h2 id="sponsors">Conocé los negocios con los que trabajamos</h2>
             <SponsorsList sponsors={sponsorsList} />
           </article>
-          <article className="flex justify-between items-center before:content-['']">
-            {/* <AssetThree /> */}
-            <h2 className='text-left'>¿Querés formar parte?</h2>
-            <div className="flex flex-col items-center gap-11">
-            <p className="text-center w-1/2">
-              Te invitamos a que visites nuestro espacio publicitario donde
-              encontraras promociones por radio, avisos, y la oportunidad de
-              aparecer junto a nuestros sponsors
-            </p>
-            <Link href="/quienes-somos">
-              <Button>Más información</Button>
-            </Link>
+          <article className="flex justify-between items-center h-[30rem]">
+            <div className="absolute max-w-full flex justify-between w-full -z-10">
+              <figure>
+                <AssetThree />
+              </figure>
+              <figure>
+                <AssetThree />
+              </figure>
             </div>
-            {/* <AssetThree /> */}
+            <h2 className="text-left">¿Querés formar parte?</h2>
+            <div className="flex flex-col items-center gap-11">
+              <p className="text-center w-1/2">
+                Te invitamos a que visites nuestro espacio publicitario donde
+                encontraras promociones por radio, avisos, y la oportunidad de
+                aparecer junto a nuestros sponsors
+              </p>
+              <Link href="/quienes-somos">
+                <Button>Más información</Button>
+              </Link>
+            </div>
           </article>
         </Section>
-        <Section className="location">
-          <div className="card card-bordered border-4 border-purple-600 image-full w-[300px] transform skew-y-[8deg] -skew-x-[8deg] -left-28">
-            <figure>
+        <Section className="location flex flex-row flex-no-wrap justify-around w-full items-center h-[40rem]">
+          <div className="absolute max-w-full flex justify-between skew-y-[4deg] -skew-x-[4deg] w-full -z-10">
+            <picture className="card image-full w-[500px] h-[600px] transform -left-28">
               <Image
-                src="/barquito.png"
-                alt="Barquito"
-                width={300}
-                height={300}
+                className="bordered h-full border-[8px] border-primary rounded-3xl"
+                src="/images/imagen-11.png"
+                alt="Puente peatonal con vista al río"
+                width={500}
+                height={500}
               />
-            </figure>
+            </picture>
+            <picture className="card image-full w-[500px] h-[600px] -right-28">
+              <Image
+                className="bordered h-full border-[8px] border-primary rounded-3xl"
+                src="/images/imagen-1.png"
+                alt="Casa rodante en una calle de tierra rodeada de árboles"
+                width={450}
+                height={450}
+              />
+            </picture>
           </div>
-          <div className="flex flex-col items-center text-center space-y-12">
-            <h2 id="location">¡Conocé donde nos encontramos!</h2>
-            <p>
+          <header className="flex flex-col items-center text-center space-y-12 max-w-[500px]">
+            <h2 id="location" className="mb-0">
+              ¡Conocé donde nos encontramos!
+            </h2>
+            <p className="text-balance">
               Ideas en el aire se encuentra en San Marcos Sierras, provincia de
               Córdoba. Te invitamos a que conozcas algunos de nuestros paisajes
               naturales, nuestras instituciones y actividades que se realizan,
@@ -176,7 +194,7 @@ const Home = () => {
             <Link href="/san-marcos-sierras">
               <Button>Descubrí más</Button>
             </Link>
-          </div>
+          </header>
         </Section>
       </main>
     </>
