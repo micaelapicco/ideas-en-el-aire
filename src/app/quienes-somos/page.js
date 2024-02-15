@@ -1,20 +1,23 @@
-import Section from '../../components/Section'
-
+import Section from "../../components/Section";
+import { AssetPrimary } from "@/assets/assets";
 const QuienesSomos = () => {
   return (
-    <main className="px-8 pb-10 pt-24 min-h-screen">
-      <h1>Quienes somos?</h1>
-      <Section className="monthly">
-        <h2>Mensuales</h2>
-      </Section>
-      <Section className="events">
-        <h2>Eventos Especiales</h2>
-      </Section>
-      <Section className="web">
-        <h2>En la web</h2>
-      </Section>
-    </main>
-  )
-}
+    <>
+      <header className="flex space-between mt-0 relative min-h-screen px-10 overflow-x-hidden">
+        <div className="hero-content flex-row-reverse">
+          <h1 className="font-bold text-8xl text-balance leading-[7rem]">
+            Quiénes Somos?
+          </h1>
+          <AssetPrimary />
+        </div>
+      </header>
+      <main className="px-8 pb-10 pt-24 min-h-screen">
+        <Section className="monthly">
+          <h2>Ideas en el aire</h2>
+        </Section>
+      </main>
+    </>
+  );
+};
 
-export default QuienesSomos
+export default QuienesSomos;
