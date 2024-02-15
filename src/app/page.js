@@ -1,118 +1,119 @@
-import Section from '../components/Section'
-import Card from '../components/Card'
-import Button from '../components/Button'
-import SponsorsList from '../components/SponsorsList'
-import { AssetPrimary, AssetOne, AssetTwo, AssetThree } from '../assets/assets'
-import Link from 'next/link'
-import Image from 'next/image'
+import Section from "../components/Section";
+import Card from "../components/Card";
+import Button from "../components/Button";
+import SponsorsList from "../components/SponsorsList";
+import Programming from "../components/Programming";
+import { AssetPrimary, AssetOne, AssetTwo, AssetThree } from "../assets/assets";
+import Link from "next/link";
+import Image from "next/image";
 
 const newsList = [
   {
-    title: 'Nuevas reservas naturales',
+    title: "Nuevas reservas naturales",
     description:
-      'Se trata de la Orco Quebrancho en San Marcos Sierras y la de Paravachasca. Qué recursos naturales y culturales se conservan. Qué dicen los especialistas en el tema.',
-    image: '/images/natural-reserves-new.png'
+      "Se trata de la Orco Quebrancho en San Marcos Sierras y la de Paravachasca. Qué recursos naturales y culturales se conservan. Qué dicen los especialistas en el tema.",
+    image: "/images/natural-reserves-new.png",
   },
   {
-    title: 'Vendía drogas a menores',
+    title: "Vendía drogas a menores",
     description:
-      'Un narcomenudista fue detenido luego de una serie de denuncias anónimas. El hombre de 38 años comercializaba drogas a menores de edad. Ocurrió en la localidad de (...)',
-    image: '/images/drugs-new.png'
+      "Un narcomenudista fue detenido luego de una serie de denuncias anónimas. El hombre de 38 años comercializaba drogas a menores de edad. Ocurrió en la localidad de (...)",
+    image: "/images/drugs-new.png",
   },
   {
-    title: 'Puma en San Marcos Sierras',
+    title: "Puma en San Marcos Sierras",
     description:
-      'El felino fue capturado la semana pasada por Policía Ambiental de Córdoba. Ahora fue trasladado a una reserva donde convivirá con otros 17 pumas.',
-    image: '/images/puma-new.png'
-  }
-]
+      "El felino fue capturado la semana pasada por Policía Ambiental de Córdoba. Ahora fue trasladado a una reserva donde convivirá con otros 17 pumas.",
+    image: "/images/puma-new.png",
+  },
+];
 
 const sponsorsList = [
   {
-    title: 'Tay',
-    image: '/images/Tay.png',
-    link: 'https://articulo.mercadolibre.com.ar/MLA-1619241544-miel-de-monte-tay-12kg-x3-_JM'
+    title: "Tay",
+    image: "/images/Tay.png",
+    link: "https://articulo.mercadolibre.com.ar/MLA-1619241544-miel-de-monte-tay-12kg-x3-_JM",
   },
   {
-    title: 'Gabriel Martoglio',
-    image: '/images/Gabriel-Martoglio.png',
-    link: 'https://www.abog-martoglio.com/'
+    title: "Gabriel Martoglio",
+    image: "/images/Gabriel-Martoglio.png",
+    link: "https://www.abog-martoglio.com/",
   },
   {
-    title: 'Guairúru',
-    image: '/images/Guairuru.png',
-    link: 'https://twitter.com/guairuru?lang=es'
+    title: "Guairúru",
+    image: "/images/Guairuru.png",
+    link: "https://twitter.com/guairuru?lang=es",
   },
   {
-    title: 'Cuántica',
-    image: '/images/Cuantica.png',
-    link: 'https://www.instagram.com/cuantica___/'
+    title: "Cuántica",
+    image: "/images/Cuantica.png",
+    link: "https://www.instagram.com/cuantica___/",
   },
   {
-    title: 'Selva C. Rovetta',
-    image: '/images/Selva-Rovetta.png',
-    link: 'mailto:selvaclarovetta@gmail.com'
+    title: "Selva C. Rovetta",
+    image: "/images/Selva-Rovetta.png",
+    link: "mailto:selvaclarovetta@gmail.com",
   },
   {
-    title: 'Sabores de la Montaña',
-    image: '/images/Sabores-de-la-montaña.png',
-    link: 'https://www.facebook.com/people/Sabores-de-la-Monta%C3%B1a/100057717631227/'
+    title: "Sabores de la Montaña",
+    image: "/images/Sabores-de-la-montaña.png",
+    link: "https://www.facebook.com/people/Sabores-de-la-Monta%C3%B1a/100057717631227/",
   },
   {
-    title: 'Kenai',
-    image: '/images/Kenai.png',
-    link: 'tel:3549551888'
+    title: "Kenai",
+    image: "/images/Kenai.png",
+    link: "tel:3549551888",
   },
   {
-    title: 'Estudio Genera',
-    image: '/images/Estudio-genera.png',
-    link: 'https://www.estudiogenera.com/'
+    title: "Estudio Genera",
+    image: "/images/Estudio-genera.png",
+    link: "https://www.estudiogenera.com/",
   },
   {
-    title: 'Bon Appetit',
-    image: '/images/Bon-Appetit.png',
-    link: 'tel:3549550614'
+    title: "Bon Appetit",
+    image: "/images/Bon-Appetit.png",
+    link: "tel:3549550614",
   },
   {
-    title: 'La Comarca a granel',
-    image: '/images/La-comarca.png',
-    link: 'https://www.instagram.com/lacomarcaagranel/?hl=es'
+    title: "La Comarca a granel",
+    image: "/images/La-comarca.png",
+    link: "https://www.instagram.com/lacomarcaagranel/?hl=es",
   },
   {
-    title: 'MeryHuén Holística',
-    image: '/images/MeryHuen-Holistica.png',
-    link: 'tel:1164543856'
+    title: "MeryHuén Holística",
+    image: "/images/MeryHuen-Holistica.png",
+    link: "tel:1164543856",
   },
   {
-    title: 'PapaloteCrea',
-    image: '/images/Papalote.png',
-    link: 'https://www.instagram.com/papalotecrea/?img_index=1'
+    title: "PapaloteCrea",
+    image: "/images/Papalote.png",
+    link: "https://www.instagram.com/papalotecrea/?img_index=1",
   },
   {
-    title: 'Indot',
-    image: '/images/Indot.png',
-    link: 'mailto:servicios@indot.com.ar'
+    title: "Indot",
+    image: "/images/Indot.png",
+    link: "mailto:servicios@indot.com.ar",
   },
   {
-    title: 'Casa Malvón',
-    image: '/images/Casa-Malvon.png',
-    link: 'mailto:servicios@indot.com.ar'
-  }
-]
+    title: "Casa Malvón",
+    image: "/images/Casa-Malvon.png",
+    link: "mailto:servicios@indot.com.ar",
+  },
+];
 
 const Home = () => {
   const newsToRender = newsList.map(({ title, description, image }, index) => {
     return (
       <Card key={index} title={title} description={description} image={image} />
-    )
-  })
+    );
+  });
 
   return (
     <>
       <header className="flex space-between mt-0 relative min-h-screen px-10 overflow-x-hidden">
         <div className="hero-content flex-row-reverse">
           <h1 className="font-bold text-8xl text-balance leading-[7rem]">
-            Escuchanos en vivo por{' '}
+            Escuchanos en vivo por{" "}
             <span className="text-primary font-extrabold">100.7 FM</span>
           </h1>
           <AssetPrimary />
@@ -121,6 +122,7 @@ const Home = () => {
       <main className="px-8 pb-10 pt-24 min-h-screen overflow-x-hidden">
         <Section className="programming">
           <h2 id="programming">Nuestra programación</h2>
+          {/* <Programming /> */}
         </Section>
         <AssetTwo />
         <Section className="news">
@@ -198,7 +200,7 @@ const Home = () => {
         </Section>
       </main>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
