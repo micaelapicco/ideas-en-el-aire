@@ -11,7 +11,7 @@
   "dependencies": {
     "@next/eslint-plugin-next": "^14.1.0",
     "@nextui-org/react": "^2.2.9",
-    "@nextui-org/tabs": "^2.0.26",
+    "framer-motion": "^11.0.5",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18"

@@ -1,9 +1,9 @@
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
+import { ContextWrapper } from '../components/ContextWrapper'
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
+
 export const metadata = {
   title: 'Ideas en el Aire',
   description: 'Escuchá Ideas en el Aire en vivo por radio Quilpo',
@@ -26,9 +26,9 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='es'>
       <body className={`${jakarta.className}`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <ContextWrapper>
+          {children}
+        </ContextWrapper>
       </body>
     </html>
   )

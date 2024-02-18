@@ -1,22 +1,53 @@
-import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
-import React from "react";
+'use server'
+
+import React from 'react'
+import { Tabs, Tab, Card, CardBody } from '@nextui-org/react'
 
 const Programming = () => {
+  'use server'
+
+  const tabs = [
+    {
+      id: 'photos',
+      label: 'Photos',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+      id: 'music',
+      label: 'Music',
+      content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    },
+    {
+      id: 'videos',
+      label: 'Videos',
+      content: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    }
+  ]
+
   return (
     <div className="flex w-full flex-col">
       <Tabs aria-label="programming">
-        <Tab key="lunes" title="Lunes">
+        {tabs.map((item) => (
+          <Tab key={item.id} title={item.label}>
+            <Card>
+              <CardBody>
+                {item.content}
+              </CardBody>
+            </Card>
+          </Tab>
+        ))}
+        {/* <Tab key="lunes" title="Lunes">
           <Card>
             <CardBody>
-              programación del lunes 
+              programación del lunes
             </CardBody>
           </Card>
-        </Tab>
+        </Tab> */}
 
-        <Tab key="martes" title="Martes">
+        {/* <Tab key="martes" title="Martes">
           <Card>
             <CardBody>
-              programación del Martes 
+              programación del Martes
             </CardBody>
           </Card>
         </Tab>
@@ -24,7 +55,7 @@ const Programming = () => {
         <Tab key="miércoles" title="Miércoles">
           <Card>
             <CardBody>
-              programación del Miércoles 
+              programación del Miércoles
             </CardBody>
           </Card>
         </Tab>
@@ -32,7 +63,7 @@ const Programming = () => {
         <Tab key="jueves" title="Jueves">
           <Card>
             <CardBody>
-              programación del Jueves 
+              programación del Jueves
             </CardBody>
           </Card>
         </Tab>
@@ -40,7 +71,7 @@ const Programming = () => {
         <Tab key="viernes" title="Viernes">
           <Card>
             <CardBody>
-              programación del Viernes 
+              programación del Viernes
             </CardBody>
           </Card>
         </Tab>
@@ -48,7 +79,7 @@ const Programming = () => {
         <Tab key="sábado" title="Sábado">
           <Card>
             <CardBody>
-              programación del Sábado 
+              programación del Sábado
             </CardBody>
           </Card>
         </Tab>
@@ -56,14 +87,14 @@ const Programming = () => {
         <Tab key="domingo" title="Domingo">
           <Card>
             <CardBody>
-              programación del Domingo 
+              programación del Domingo
             </CardBody>
           </Card>
-        </Tab>
+        </Tab> */}
 
-        </Tabs>
+      </Tabs>
     </div>
-  );
-};
+  )
+}
 
-export default Programming;
+export default Programming
