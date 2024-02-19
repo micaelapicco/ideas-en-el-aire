@@ -26,7 +26,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='es'>
-      <body className={`${jakarta.className}`}>
+      <body className={`${jakarta.className} overflow-x-hidden`}>
         <Navbar />
           {children}
         <Footer />

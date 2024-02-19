@@ -110,7 +110,7 @@ const Home = () => {
 
   return (
     <>
-      <header className="flex space-between mt-0 relative min-h-screen px-10 overflow-x-hidden">
+      <header className="flex space-between mt-0 relative min-h-screen px-10">
         <div className="hero-content flex-row-reverse">
           <h1 className="font-bold text-8xl text-balance leading-[7rem]">
             Escuchanos en vivo por{' '}
@@ -119,7 +119,7 @@ const Home = () => {
           <AssetPrimary />
         </div>
       </header>
-      <main className="px-8 pb-10 pt-24 min-h-screen overflow-x-hidden">
+      <main className="px-8 pb-10 pt-24 min-h-screen">
         <Section className="programming">
           <h2 id="programming">Nuestra programación</h2>
           <Programming />
@@ -164,18 +164,18 @@ const Home = () => {
         </Section>
         <Section className="location flex flex-row flex-no-wrap justify-around w-full items-center h-[40rem]">
           <div className="absolute max-w-full flex justify-between skew-y-[4deg] -skew-x-[4deg] w-full -z-10">
-            <picture className="card image-full w-[500px] h-[600px] transform -left-28">
+            <picture className="w-[500px] h-[600px] transform -left-28">
               <Image
-                className="bordered h-full border-[8px] border-primary rounded-3xl"
+                className="bordered h-full w-auto border-[8px] border-primary rounded-3xl"
                 src="/images/imagen-11.png"
                 alt="Puente peatonal con vista al río"
                 width={500}
                 height={500}
               />
             </picture>
-            <picture className="card image-full w-[500px] h-[600px] -right-28">
+            <picture className="w-[500px] h-[600px] -right-28">
               <Image
-                className="bordered h-full border-[8px] border-primary rounded-3xl"
+                className="bordered h-full w-auto border-[8px] border-primary rounded-3xl"
                 src="/images/imagen-1.png"
                 alt="Casa rodante en una calle de tierra rodeada de árboles"
                 width={450}
