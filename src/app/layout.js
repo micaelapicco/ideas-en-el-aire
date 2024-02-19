@@ -1,6 +1,7 @@
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
-import { ContextWrapper } from '../components/ContextWrapper'
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
@@ -26,9 +27,9 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='es'>
       <body className={`${jakarta.className}`}>
-        <ContextWrapper>
+        <Navbar />
           {children}
-        </ContextWrapper>
+        <Footer />
       </body>
     </html>
   )

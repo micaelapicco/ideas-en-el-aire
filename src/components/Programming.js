@@ -1,98 +1,124 @@
-'use server'
-
-import React from 'react'
-import { Tabs, Tab, Card, CardBody } from '@nextui-org/react'
-
 const Programming = () => {
-  'use server'
-
-  const tabs = [
+  const programmingList = [
     {
-      id: 'photos',
-      label: 'Photos',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      day: 'Lunes',
+      programs: [
+        { time: '00:00 hs', name: 'La hora negra' },
+        { time: '02:00 hs', name: 'Trasnoche Quilpo' },
+        { time: '04:00 hs', name: 'Latinoamericano lento' },
+        { time: '10:00 hs', name: 'D10' },
+        { time: '12:30 hs', name: 'Percepciones diferentes' },
+        { time: '13:00 hs', name: 'NAC - Rock Argentino' },
+        { time: '15:00 hs', name: 'Internacional' },
+        { time: '17:00 hs', name: 'Latino' },
+        { time: '18:00 hs', name: 'Sale mate' },
+        { time: '19:00 hs', name: 'TV Vespertina en colores (TVC)' },
+        { time: '20:00 hs', name: 'Soñando barcos' }
+      ]
     },
     {
-      id: 'music',
-      label: 'Music',
-      content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+      day: 'Martes',
+      programs: [
+        { time: '00:00 hs', name: 'La hora negra' },
+        { time: '02:00 hs', name: 'Trasnoche Quilpo' },
+        { time: '04:00 hs', name: 'Latinoamericano lento' },
+        { time: '10:00 hs', name: 'D10' },
+        { time: '12:30 hs', name: 'Percepciones diferentes' },
+        { time: '13:00 hs', name: 'NAC - Rock Argentino' },
+        { time: '15:00 hs', name: 'Internacional' },
+        { time: '17:00 hs', name: 'Latino' },
+        { time: '18:00 hs', name: 'Sale mate' },
+        { time: '19:00 hs', name: 'TV Vespertina en colores (TVC)' },
+        { time: '20:00 hs', name: 'La Herrería' }
+      ]
     },
     {
-      id: 'videos',
-      label: 'Videos',
-      content: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      day: 'Miércoles',
+      programs: [
+        { time: '00:00 hs', name: 'La hora negra' },
+        { time: '02:00 hs', name: 'Trasnoche Quilpo' },
+        { time: '04:00 hs', name: 'Latinoamericano lento' },
+        { time: '10:00 hs', name: 'D10' },
+        { time: '12:30 hs', name: 'Percepciones diferentes' },
+        { time: '13:00 hs', name: 'NAC - Rock Argentino' },
+        { time: '15:00 hs', name: 'Internacional' },
+        { time: '17:00 hs', name: 'Latino' },
+        { time: '18:00 hs', name: 'Sale mate' },
+        { time: '19:00 hs', name: 'TV Vespertina en colores (TVC)' }
+      ]
+    },
+    {
+      day: 'Jueves',
+      programs: [
+        { time: '00:00 hs', name: 'La hora negra' },
+        { time: '02:00 hs', name: 'Trasnoche Quilpo' },
+        { time: '04:00 hs', name: 'Latinoamericano lento' },
+        { time: '10:00 hs', name: 'D10' },
+        { time: '12:30 hs', name: 'Percepciones diferentes' },
+        { time: '13:00 hs', name: 'NAC - Rock Argentino' },
+        { time: '15:00 hs', name: 'Internacional' },
+        { time: '17:00 hs', name: 'Latino' },
+        { time: '18:00 hs', name: 'Sale mate' },
+        { time: '19:00 hs', name: 'TV Vespertina en colores (TVC)' }
+      ]
+    },
+    {
+      day: 'Viernes',
+      programs: [
+        { time: '00:00 hs', name: 'La hora negra' },
+        { time: '02:00 hs', name: 'Trasnoche Quilpo' },
+        { time: '04:00 hs', name: 'Latinoamericano lento' },
+        { time: '10:00 hs', name: 'D10' },
+        { time: '12:30 hs', name: 'Percepciones diferentes' },
+        { time: '13:00 hs', name: 'NAC - Rock Argentino' },
+        { time: '15:00 hs', name: 'Internacional' },
+        { time: '17:00 hs', name: 'Latino' },
+        { time: '18:00 hs', name: 'Sale mate' },
+        { time: '19:00 hs', name: 'TV Vespertina en colores (TVC)' }
+      ]
+    },
+    {
+      day: 'Sábado',
+      programs: [
+        { time: '02:00 hs', name: 'Trasnoche Quilpo' },
+        { time: '04:00 hs', name: 'Latinoamericano lento' },
+        { time: '06:00 hs', name: 'Folcklore a las seis' },
+        { time: '10:00 hs', name: 'Hoy puede ser un gran día' },
+        { time: '21:00 hs', name: 'Con ciertos sonidos' }
+      ]
+    },
+    {
+      day: 'Domingo',
+      programs: [
+        { time: '06:00 hs', name: 'Folcklore a las seis' },
+        { time: '10:00 hs', name: 'Hoy puede ser un gran día' },
+        { time: '19:00 hs', name: 'Rincón porteño' }
+      ]
     }
   ]
 
   return (
-    <div className="flex w-full flex-col">
-      <Tabs aria-label="programming">
-        {tabs.map((item) => (
-          <Tab key={item.id} title={item.label}>
-            <Card>
-              <CardBody>
-                {item.content}
-              </CardBody>
-            </Card>
-          </Tab>
-        ))}
-        {/* <Tab key="lunes" title="Lunes">
-          <Card>
-            <CardBody>
-              programación del lunes
-            </CardBody>
-          </Card>
-        </Tab> */}
-
-        {/* <Tab key="martes" title="Martes">
-          <Card>
-            <CardBody>
-              programación del Martes
-            </CardBody>
-          </Card>
-        </Tab>
-
-        <Tab key="miércoles" title="Miércoles">
-          <Card>
-            <CardBody>
-              programación del Miércoles
-            </CardBody>
-          </Card>
-        </Tab>
-
-        <Tab key="jueves" title="Jueves">
-          <Card>
-            <CardBody>
-              programación del Jueves
-            </CardBody>
-          </Card>
-        </Tab>
-
-        <Tab key="viernes" title="Viernes">
-          <Card>
-            <CardBody>
-              programación del Viernes
-            </CardBody>
-          </Card>
-        </Tab>
-
-        <Tab key="sábado" title="Sábado">
-          <Card>
-            <CardBody>
-              programación del Sábado
-            </CardBody>
-          </Card>
-        </Tab>
-
-        <Tab key="domingo" title="Domingo">
-          <Card>
-            <CardBody>
-              programación del Domingo
-            </CardBody>
-          </Card>
-        </Tab> */}
-
-      </Tabs>
+    <div role="tablist" className="tabs tabs-bordered justify-center text-xl">
+      {programmingList.map(({ day, programs }) => (
+        <>
+          <input
+            type="radio"
+            name="my_tabs_1"
+            role="tab"
+            className="tab text-xl"
+            aria-label={day}
+          />
+          <div role="tabpanel" className="tab-content p-10">
+            <ul>
+              {programs.map(({ time, name, index }) => (
+                <li key={index}>
+                  <strong>{time}</strong> - {name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </>
+      ))}
     </div>
   )
 }

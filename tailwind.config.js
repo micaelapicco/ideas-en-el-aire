@@ -19,7 +19,7 @@ export const theme = {
     }
   }
 }
-export const plugins = [require('daisyui'), nextui()]
+export const plugins = [require('daisyui')]
 export const daisyui = {
   themes: [
     {
@@ -31,12 +31,12 @@ export const daisyui = {
         'base-100': '#1F1D1D',
         'base-content': '#FBFBFE'
       }
-    },
-    {
-      light: {
-        ...light,
-        primary: '#928354'
-      }
     }
+    // {
+    //   light: {
+    //     ...light,
+    //     primary: '#928354'
+    //   }
+    // }
   ]
 }
