@@ -41,3 +41,12 @@ section .galery {
     text-wrap: balance;
   }
 }
+
+.tabs-bordered > .tab:checked {
+  @apply border-solid border-accent text-accent;
+  border-bottom-width: calc(var(--tab-border, 3px) + 3px);
+}
+
+.tabs-bordered > .tab {
+  @apply pb-8;
+}
