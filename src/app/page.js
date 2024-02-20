@@ -1,32 +1,10 @@
 import Section from '../components/Section'
-import Card from '../components/Card'
 import Button from '../components/Button'
 import SponsorsList from '../components/SponsorsList'
 import Programming from '../components/Programming'
 import { AssetPrimary, AssetOne, AssetTwo, AssetThree } from '../assets/assets'
 import Link from 'next/link'
 import Image from 'next/image'
-
-const newsList = [
-  {
-    title: 'Nuevas reservas naturales',
-    description:
-      'Se trata de la Orco Quebrancho en San Marcos Sierras y la de Paravachasca. Qué recursos naturales y culturales se conservan. Qué dicen los especialistas en el tema.',
-    image: '/images/natural-reserves-new.png'
-  },
-  {
-    title: 'Vendía drogas a menores',
-    description:
-      'Un narcomenudista fue detenido luego de una serie de denuncias anónimas. El hombre de 38 años comercializaba drogas a menores de edad. Ocurrió en la localidad de (...)',
-    image: '/images/drugs-new.png'
-  },
-  {
-    title: 'Puma en San Marcos Sierras',
-    description:
-      'El felino fue capturado la semana pasada por Policía Ambiental de Córdoba. Ahora fue trasladado a una reserva donde convivirá con otros 17 pumas.',
-    image: '/images/puma-new.png'
-  }
-]
 
 const sponsorsList = [
   {
@@ -102,12 +80,6 @@ const sponsorsList = [
 ]
 
 const Home = () => {
-  const newsToRender = newsList.map(({ title, description, image }, index) => {
-    return (
-      <Card key={index} title={title} description={description} image={image} />
-    )
-  })
-
   return (
     <>
       <header className="flex space-between mt-0 relative min-h-screen px-10">
@@ -125,14 +97,9 @@ const Home = () => {
           <Programming />
         </Section>
         <AssetTwo />
-        <Section className="news">
-          <h2 id="news">Mirá algunas de las noticias recientes</h2>
-          <div className="flex gap-11 items-center justify-center mb-14">
-            {newsToRender}
-          </div>
-          <Link href="/noticias" className="flex justify-center">
-            <Button>Ver más</Button>
-          </Link>
+        <Section className="recorders">
+          <h2 id="recorders">Reviví algunos momentos!</h2>
+          <Programming />
         </Section>
         <AssetOne />
         <Section className="sponsors">

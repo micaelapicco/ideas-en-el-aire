@@ -1,5 +1,5 @@
-import Section from "../../components/Section";
-import { AssetOne, AssetPrimary } from "../../assets/assets";
+import Section from '../../components/Section'
+import { AssetOne, AssetPrimary } from '../../assets/assets'
 
 const SanMarcosSierras = () => {
   return (
@@ -46,7 +46,7 @@ const SanMarcosSierras = () => {
         </Section>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default SanMarcosSierras;
+export default SanMarcosSierras
