@@ -99,7 +99,6 @@ const Home = () => {
         <AssetTwo />
         <Section className="recorders">
           <h2 id="recorders">Reviví algunos momentos!</h2>
-          <Programming />
         </Section>
         <AssetOne />
         <Section className="sponsors">
@@ -107,15 +106,10 @@ const Home = () => {
             <h2 id="sponsors">Conocé los negocios con los que trabajamos</h2>
             <SponsorsList sponsors={sponsorsList} />
           </article>
+          <figure className="absolute -z-10 left-0">
+            <AssetThree />
+          </figure>
           <article className="flex justify-between items-center h-[30rem]">
-            <div className="absolute max-w-full flex justify-between w-full -z-10">
-              <figure>
-                <AssetThree />
-              </figure>
-              <figure>
-                <AssetThree />
-              </figure>
-            </div>
             <h2 className="text-left">¿Querés formar parte?</h2>
             <div className="flex flex-col items-center gap-11">
               <p className="text-center w-1/2">
@@ -128,6 +122,9 @@ const Home = () => {
               </Link>
             </div>
           </article>
+          <figure className="absolute -z-10 right-0">
+            <AssetThree />
+          </figure>
         </Section>
         <Section className="location flex flex-row flex-no-wrap justify-around w-full items-center h-[40rem]">
           <div className="absolute max-w-full flex justify-between skew-y-[4deg] -skew-x-[4deg] w-full -z-10">

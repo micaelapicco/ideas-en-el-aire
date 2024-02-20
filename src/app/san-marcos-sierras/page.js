@@ -1,5 +1,6 @@
 import Section from '../../components/Section'
 import { AssetOne, AssetPrimary } from '../../assets/assets'
+import InstitutesCards from '@/components/InstitutesCards'
 
 const SanMarcosSierras = () => {
   return (
@@ -38,6 +39,7 @@ const SanMarcosSierras = () => {
         </Section>
         <Section className="institutes">
           <h2>Contá con el apoyo de nuestras instituciones</h2>
+          <InstitutesCards />
         </Section>
         <Section className="location">
           <h2>Cómo llegar? </h2>
