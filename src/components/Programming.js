@@ -123,23 +123,23 @@ const Programming = () => {
   }, [currentDayIndex])
 
   return (
-    <div role="tablist" className="tabs tabs-bordered justify-center text-xl">
+    <div role='tablist' className='tabs tabs-bordered justify-center text-xl'>
       {programmingList.map(({ day, dayNumber, programs }) => (
         <>
           <input
-            type="radio"
-            name="my_tabs_1"
-            role="tab"
-            className="tab text-2xl font-bold"
+            type='radio'
+            name='my_tabs_1'
+            role='tab'
+            className='tab text-2xl font-bold'
             aria-label={day}
             checked={currentDayIndex === dayNumber}
             onChange={() => setCurrentDayIndex(dayNumber)}
           />
-          <div role="tabpanel" className="tab-content p-10">
-            <ul className='grid grid-cols-2'>
+          <div role='tabpanel' className='tab-content p-10'>
+            <ul className='flex flex-wrap flex-col max-h-[200px]'>
               {programs.map(({ time, name, index }) => (
                 <li key={index}>
-                  <strong className="text-secondary">{time}</strong> - {name}
+                  <strong className='text-secondary'>{time}</strong> - {name}
                 </li>
               ))}
             </ul>

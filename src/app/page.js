@@ -2,6 +2,7 @@ import Section from '../components/Section'
 import Button from '../components/Button'
 import SponsorsList from '../components/SponsorsList'
 import Programming from '../components/Programming'
+import Recorders from '@/components/Recorders'
 import { AssetPrimary, AssetOne, AssetTwo, AssetThree } from '../assets/assets'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -82,82 +83,88 @@ const sponsorsList = [
 const Home = () => {
   return (
     <>
-      <header className="flex space-between mt-0 relative min-h-screen px-10">
-        <div className="hero-content flex-row-reverse">
-          <h1 className="font-bold text-8xl text-balance leading-[7rem]">
+      <header className='flex space-between mt-0 relative min-h-screen px-10'>
+        <div className='hero-content flex-row-reverse'>
+          <h1 className='font-bold text-8xl text-balance leading-[7rem]'>
             Escuchanos en vivo por{' '}
-            <span className="text-primary font-extrabold">100.7 FM</span>
+            <span className='text-primary font-extrabold'>100.7 FM</span>
           </h1>
           <AssetPrimary />
         </div>
       </header>
-      <main className="px-8 pb-10 pt-24 min-h-screen">
-        <Section className="programming">
-          <h2 id="programming">Nuestra programación</h2>
+      <main className='min-h-screen'>
+        <Section id='programming'>
+          <h2>Nuestra programación</h2>
           <Programming />
         </Section>
         <AssetTwo />
-        <Section className="recorders">
-          <h2 id="recorders">Reviví algunos momentos!</h2>
+        <Section id='recorders' className='flex justify-center items-center gap-16'>
+          <header className='flex flex-col items-center'>
+            <h2>Reviví algunos momentos!</h2>
+            <Link href='https://www.youtube.com/@ideasenelaire2345' target='_blank noopener noreferrer'>
+              <Button>Ir al canal</Button>
+            </Link>
+          </header>
+          <Recorders className='center' />
         </Section>
         <AssetOne />
-        <Section className="sponsors">
-          <article className="pb-8">
-            <h2 id="sponsors">Conocé los negocios con los que trabajamos</h2>
+        <Section id='sponsors'>
+          <article className='pb-8'>
+            <h2>Conocé los negocios con los que trabajamos</h2>
             <SponsorsList sponsors={sponsorsList} />
           </article>
-          <figure className="absolute -z-10 left-0">
+          <figure className='absolute -z-10 left-0'>
             <AssetThree />
           </figure>
-          <article className="flex justify-between items-center h-[30rem]">
-            <h2 className="text-left">¿Querés formar parte?</h2>
-            <div className="flex flex-col items-center gap-11">
-              <p className="text-center w-1/2">
+          <article className='flex justify-between items-center h-[30rem]'>
+            <h2 className='text-left'>¿Querés formar parte?</h2>
+            <div className='flex flex-col items-center gap-11'>
+              <p className='text-center w-1/2'>
                 Te invitamos a que visites nuestro espacio publicitario donde
                 encontraras promociones por radio, avisos, y la oportunidad de
                 aparecer junto a nuestros sponsors
               </p>
-              <Link href="/quienes-somos">
+              <Link href='/quienes-somos'>
                 <Button>Más información</Button>
               </Link>
             </div>
           </article>
-          <figure className="absolute -z-10 right-0">
+          <figure className='absolute -z-10 right-0'>
             <AssetThree />
           </figure>
         </Section>
-        <Section className="location flex flex-row flex-no-wrap justify-around w-full items-center h-[40rem]">
-          <div className="absolute max-w-full flex justify-between skew-y-[4deg] -skew-x-[4deg] w-full -z-10">
-            <picture className="w-[500px] h-[600px] transform -left-28">
+        <Section id='location' className='flex flex-row flex-no-wrap justify-around w-full items-center h-[40rem]'>
+          <div className='absolute max-w-full flex justify-between skew-y-[4deg] -skew-x-[4deg] w-full -z-10'>
+            <picture className='w-[500px] h-[600px] transform -left-28'>
               <Image
-                className="bordered h-full w-auto border-[8px] border-primary rounded-3xl"
-                src="/images/imagen-11.png"
-                alt="Puente peatonal con vista al río"
+                className='bordered h-full w-auto border-[8px] border-primary rounded-3xl'
+                src='/images/imagen-11.png'
+                alt='Puente peatonal con vista al río'
                 width={500}
                 height={500}
               />
             </picture>
-            <picture className="w-[500px] h-[600px] -right-28">
+            <picture className='w-[500px] h-[600px] -right-28'>
               <Image
-                className="bordered h-full w-auto border-[8px] border-primary rounded-3xl"
-                src="/images/imagen-1.png"
-                alt="Casa rodante en una calle de tierra rodeada de árboles"
+                className='bordered h-full w-auto border-[8px] border-primary rounded-3xl'
+                src='/images/imagen-1.png'
+                alt='Casa rodante en una calle de tierra rodeada de árboles'
                 width={450}
                 height={450}
               />
             </picture>
           </div>
-          <header className="flex flex-col items-center text-center space-y-12 max-w-[500px]">
-            <h2 id="location" className="mb-0">
+          <header className='flex flex-col items-center text-center space-y-12 max-w-[500px]'>
+            <h2 id='location' className='mb-0'>
               ¡Conocé donde nos encontramos!
             </h2>
-            <p className="text-balance">
+            <p className='text-balance'>
               Ideas en el aire se encuentra en San Marcos Sierras, provincia de
               Córdoba. Te invitamos a que conozcas algunos de nuestros paisajes
               naturales, nuestras instituciones y actividades que se realizan,
               ¡entre otras cosas de interés!
             </p>
-            <Link href="/san-marcos-sierras">
+            <Link href='/san-marcos-sierras'>
               <Button>Descubrí más</Button>
             </Link>
           </header>

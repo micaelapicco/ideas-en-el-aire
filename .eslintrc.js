@@ -30,6 +30,7 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
-    camelcase: 'off'
+    camelcase: 'off',
+    'jsx-quotes': ['error', 'prefer-single']
   }
 }

@@ -4,7 +4,7 @@ import Image from 'next/image'
 const SponsorItem = ({ sponsor, key }) => {
   return (
     <article key={key}>
-      <Link href={sponsor.link}>
+      <Link href={sponsor.link} target='_blank noopener noreferrer'>
         <Image
           src={sponsor.image}
           alt={sponsor.title}

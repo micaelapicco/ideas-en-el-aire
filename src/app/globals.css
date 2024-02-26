@@ -15,13 +15,13 @@ h2 {
 }
 
 /* Galery - san marcos sierras */
-section .galery {
+section #galery {
   display: flex;
   width: auto;
   height: 430px;
 }
 
-.galery img {
+#galery img {
   width: 0px;
   flex-grow: 1;
   object-fit: cover;
@@ -29,7 +29,7 @@ section .galery {
   transition: 0.5s ease;
 }
 
-.galery img:hover {
+#galery img:hover {
   cursor: auto;
   width: 600px;
   opacity: 1;

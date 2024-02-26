@@ -84,11 +84,11 @@ const InstitutesCards = () => {
   return (
     <article className='grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center'>
       {institutes.map(({ name, type, telephone, address }) => (
-        <div className="card card-side bg-base-100 shadow-xl w-[25vw]" key={name}>
-          <div className="card-body">
+        <div className='card card-side bg-base-100 shadow-xl w-[25vw]' key={name}>
+          <div className='card-body'>
             <div>
-                <h2 className='card-title'>{name}</h2>
-                <div className="badge badge-secondary">{type}</div>
+                <h3 className='card-title'>{name}</h3>
+                <div className='badge badge-secondary'>{type}</div>
             </div>
             <p className='inline-flex items-center gap-2'><Phone /> {telephone}</p>
             <p className='inline-flex items-center gap-2'><Address /> {address}</p>

@@ -31,12 +31,16 @@ export const daisyui = {
         'base-100': '#1F1D1D',
         'base-content': '#FBFBFE'
       }
+    },
+    {
+      light: {
+        ...light,
+        primary: '#8B1874',
+        secondary: '#B71375',
+        accent: '#FC4F00',
+        'base-100': '#FCFAF8',
+        'base-content': '#130E01'
+      }
     }
-    // {
-    //   light: {
-    //     ...light,
-    //     primary: '#928354'
-    //   }
-    // }
   ]
 }
