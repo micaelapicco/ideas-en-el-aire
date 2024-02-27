@@ -3,9 +3,10 @@ import Button from '../components/Button'
 import SponsorsList from '../components/SponsorsList'
 import Programming from '../components/Programming'
 import Recorders from '@/components/Recorders'
-import { AssetPrimary, AssetOne, AssetTwo, AssetThree } from '../assets/assets'
+import { AssetOne, AssetTwo, AssetThree } from '../assets/assets'
 import Link from 'next/link'
 import Image from 'next/image'
+import Hero from '../components/Hero'
 
 const sponsorsList = [
   {
@@ -83,24 +84,16 @@ const sponsorsList = [
 const Home = () => {
   return (
     <>
-      <header className='flex space-between mt-0 relative min-h-screen px-10'>
-        <div className='hero-content flex-row-reverse'>
-          <h1 className='font-bold text-8xl text-balance leading-[7rem]'>
-            Escuchanos en vivo por{' '}
-            <span className='text-primary font-extrabold'>100.7 FM</span>
-          </h1>
-          <AssetPrimary />
-        </div>
-      </header>
+      <Hero />
       <main className='min-h-screen'>
         <Section id='programming'>
-          <h2>Nuestra programación</h2>
+          <h2 className='text-4xl md:text-5xl'>Nuestra programación</h2>
           <Programming />
         </Section>
         <AssetTwo />
         <Section id='recorders' className='flex justify-center items-center gap-16'>
           <header className='flex flex-col items-center'>
-            <h2>Reviví algunos momentos!</h2>
+            <h2 className='text-4xl md:text-5xl'>Reviví algunos momentos!</h2>
             <Link href='https://www.youtube.com/@ideasenelaire2345' target='_blank noopener noreferrer'>
               <Button>Ir al canal</Button>
             </Link>
@@ -110,16 +103,16 @@ const Home = () => {
         <AssetOne />
         <Section id='sponsors'>
           <article className='pb-8'>
-            <h2>Conocé los negocios con los que trabajamos</h2>
+            <h2 className='text-4xl md:text-5xl mb-32 text-center'>Quienes <u className='text-primary'>confían</u> en nosotros</h2>
             <SponsorsList sponsors={sponsorsList} />
           </article>
           <figure className='absolute -z-10 left-0'>
             <AssetThree />
           </figure>
-          <article className='flex justify-between items-center h-[30rem]'>
-            <h2 className='text-left'>¿Querés formar parte?</h2>
+          <article className='flex flex-col items-center h-[34rem] md:flex-row md:justify-between md:h-[30rem]'>
+            <h2 className='text-center text-4xl pt-11 md:text-5xl md:text-left md:pt-0'>¿Querés formar parte?</h2>
             <div className='flex flex-col items-center gap-11'>
-              <p className='text-center w-1/2'>
+              <p className='text-center text-balance w-[50%] md:w-1/2'>
                 Te invitamos a que visites nuestro espacio publicitario donde
                 encontraras promociones por radio, avisos, y la oportunidad de
                 aparecer junto a nuestros sponsors
@@ -155,7 +148,7 @@ const Home = () => {
             </picture>
           </div>
           <header className='flex flex-col items-center text-center space-y-12 max-w-[500px]'>
-            <h2 id='location' className='mb-0'>
+            <h2 id='location' className='mb-0 text-4xl md:text-5xl'>
               ¡Conocé donde nos encontramos!
             </h2>
             <p className='text-balance'>

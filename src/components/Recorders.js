@@ -13,7 +13,7 @@ const Recorders = () => {
             title='Nota a Paula Neri - Directora / La Narradora Impura'
             frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>

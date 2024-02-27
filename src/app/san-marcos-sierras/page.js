@@ -45,7 +45,7 @@ const SanMarcosSierras = () => {
           <h2>¿Cómo llegar? </h2>
           <article>
             mapita google
-            <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13710.511557186914!2d-64.6429507!3d-30.785021649999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942deb751d30a281%3A0xcf3af38a9ae4d221!2sSan%20Marcos%20Sierras%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2suy!4v1708959016743!5m2!1ses!2suy' width='600' height='450' style={{ border: 0 }} allowfullscreen='' loading='lazy' referrerPolicy='no-referrer-when-downgrade'></iframe>
+            <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13710.511557186914!2d-64.6429507!3d-30.785021649999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942deb751d30a281%3A0xcf3af38a9ae4d221!2sSan%20Marcos%20Sierras%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2suy!4v1708959016743!5m2!1ses!2suy' width='600' height='450' style={{ border: 0 }} allowFullScreen='' loading='lazy' referrerPolicy='no-referrer-when-downgrade'></iframe>
             </article>
           <article>Horario de colectivo</article>
           <h3 className='text-center text-[5rem] text-primary uppercase font-bold bg-clip-text text-transparent bg-gradient-to-br from-accent from-15% via-primary via-60% to-secondary to-100% p-16'>¡Los esperamos!</h3>

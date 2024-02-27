@@ -16,7 +16,8 @@ export const metadata = {
     'San Marcos',
     'Córdoba',
     'Argentina',
-    'Radio argentina'
+    'Radio argentina',
+    'FM 100.7'
   ],
   icons: {
     icon: '/favicon.ico'

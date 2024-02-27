@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import { nextui } from '@nextui-org/react'
 import { dark, light } from 'daisyui/src/theming/themes'
 
 export const content = [

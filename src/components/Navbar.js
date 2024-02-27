@@ -1,26 +1,15 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ThemeToggle from './ThemeToggle'
+import { Menu } from './Icons'
+
 const Navbar = () => {
   return (
-    <div className='navbar bg-base-100 py-[20px] px-[30px] sticky top-0 z-10 justify-between'>
-      <div className='navbar-start w-auto'>
-        <div className='dropdown'>
-          <div tabIndex={0} role='button' className='btn btn-ghost xl:hidden'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='h-5 w-5'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                d='M4 6h16M4 12h8m-8 6h16'
-              />
-            </svg>
+    <nav className='navbar bg-base-100 py-[20px] px-[30px] sticky top-0 z-10 justify-between'>
+      <div className='navbar-start w-full flex-row-reverse justify-between xl:w-auto'>
+        <div className='dropdown dropdown-end'>
+          <div tabIndex={0} role='button' className='btn btn-ghost p-0 xl:hidden'>
+            <Menu />
           </div>
           <ul
             tabIndex={0}
@@ -56,12 +45,12 @@ const Navbar = () => {
             <li>
               <Link href='/quienes-somos'>Sobre nosotros</Link>
             </li>
+            <li>
+              <ThemeToggle />
+            </li>
           </ul>
         </div>
-        <Link
-          href='/'
-          className='text-2xl flex items-center space-x-2'
-        >
+        <Link href='/' className='text-2xl flex items-center space-x-2'>
           <Image
             src='/logo-nav.svg'
             alt='Ideas en el aire logo'
@@ -109,10 +98,10 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className='navbar-end w-fit'>
+      <div className='navbar-end w-fit hidden xl:block'>
         <ThemeToggle />
       </div>
-    </div>
+    </nav>
   )
 }
 

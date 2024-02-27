@@ -77,8 +77,9 @@ export const AssetTwo = () => (
 
 export const AssetThree = () => (
   <svg
+    className='md:w-[566px] md:h-[14px]'
     xmlns='http://www.w3.org/2000/svg'
-    width='566'
+    width='320'
     height='14'
     viewBox='0 0 566 14'
     fill='none'
@@ -125,7 +126,7 @@ export const AssetFour = () => (
 export const AssetPrimary = () => (
   <svg
     style={{ aspectRatio: '5 / 6' }}
-    className='absolute -top-60 -right-28 w-[50vw] -z-50'
+    className='absolute -top-4 -right-20 w-[60vw] -z-50 xl:-top-60 xl:-right-28 xl:w-[50vw]'
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 1025 1271'
     fill='none'
