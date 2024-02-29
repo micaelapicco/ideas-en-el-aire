@@ -2,10 +2,10 @@ import { AssetPrimary } from '../assets/assets'
 
 const Hero = () => {
   return (
-    <header className='hero min-h-[calc(100vh-4rem)] px-9 xl:px-0'>
+    <header className='hero min-h-[calc(100vh-4rem)] px-9 xl:px-10'>
       <div className='hero-content w-full text-center md:text-left md:items-start md:justify-start'>
         <div className='max-w-md -m-8'>
-          <h1 className='text-5xl font-bold text-balance md:text-6xl xl:text-8xl'>
+          <h1 className='text-5xl font-bold text-balance md:text-6xl xl:text-[5rem]'>
             Escuchanos en vivo por&nbsp;
             <strong className='text-primary font-extrabold'>100.7 FM</strong>
           </h1>

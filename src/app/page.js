@@ -2,12 +2,12 @@ import Section from '../components/Section'
 import Button from '../components/Button'
 import SponsorsList from '../components/SponsorsList'
 import Programming from '../components/Programming'
-import Recorders from '@/components/Recorders'
 import { AssetOne, AssetTwo, AssetThree } from '../assets/assets'
 import Link from 'next/link'
 import Image from 'next/image'
 import Hero from '../components/Hero'
-
+import ProgrammingAccordion from '@/components/ProgrammingAccordion'
+import { Play } from '../components/Icons'
 const sponsorsList = [
   {
     title: 'Tay',
@@ -86,19 +86,11 @@ const Home = () => {
     <>
       <Hero />
       <main className='min-h-screen'>
-        <Section id='programming'>
-          <h2 className='text-4xl md:text-5xl'>Nuestra programación</h2>
-          <Programming />
-        </Section>
         <AssetTwo />
-        <Section id='recorders' className='flex justify-center items-center gap-16'>
-          <header className='flex flex-col items-center'>
-            <h2 className='text-4xl md:text-5xl'>Reviví algunos momentos!</h2>
-            <Link href='https://www.youtube.com/@ideasenelaire2345' target='_blank noopener noreferrer'>
-              <Button>Ir al canal</Button>
-            </Link>
-          </header>
-          <Recorders className='center' />
+        <Section id='programming'>
+          <h2 className='flex justify-center items-center text-4xl md:text-5xl'>Nuestra programación&nbsp;<Play /></h2>
+          <Programming />
+          <ProgrammingAccordion />
         </Section>
         <AssetOne />
         <Section id='sponsors'>
@@ -109,10 +101,10 @@ const Home = () => {
           <figure className='absolute -z-10 left-0'>
             <AssetThree />
           </figure>
-          <article className='flex flex-col items-center h-[34rem] md:flex-row md:justify-between md:h-[30rem]'>
+          <article className='flex flex-col items-center h-[29rem] md:flex-row md:justify-between md:h-[30rem]'>
             <h2 className='text-center text-4xl pt-11 md:text-5xl md:text-left md:pt-0'>¿Querés formar parte?</h2>
             <div className='flex flex-col items-center gap-11'>
-              <p className='text-center text-balance w-[50%] md:w-1/2'>
+              <p className='text-center text-balance w-full md:w-1/2'>
                 Te invitamos a que visites nuestro espacio publicitario donde
                 encontraras promociones por radio, avisos, y la oportunidad de
                 aparecer junto a nuestros sponsors
@@ -127,7 +119,7 @@ const Home = () => {
           </figure>
         </Section>
         <Section id='location' className='flex flex-row flex-no-wrap justify-around w-full items-center h-[40rem]'>
-          <div className='absolute max-w-full flex justify-between skew-y-[4deg] -skew-x-[4deg] w-full -z-10'>
+          <div className='hidden absolute max-w-full xl:flex justify-between skew-y-[4deg] -skew-x-[4deg] w-full -z-10'>
             <picture className='w-[500px] h-[600px] transform -left-28'>
               <Image
                 className='bordered h-full w-auto border-[8px] border-primary rounded-3xl'
@@ -147,7 +139,7 @@ const Home = () => {
               />
             </picture>
           </div>
-          <header className='flex flex-col items-center text-center space-y-12 max-w-[500px]'>
+          <header className='flex flex-col items-center text-center space-y-12 max-w-[500px] px-14 xl:px-0'>
             <h2 id='location' className='mb-0 text-4xl md:text-5xl'>
               ¡Conocé donde nos encontramos!
             </h2>

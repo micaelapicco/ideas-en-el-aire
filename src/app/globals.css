@@ -50,3 +50,11 @@ section #galery {
 .tabs-bordered > .tab {
   @apply pb-8;
 }
+
+.collapse-arrow > input:checked + .collapse-title {
+  @apply text-accent;
+}
+
+p {
+  @apply text-sm;
+}

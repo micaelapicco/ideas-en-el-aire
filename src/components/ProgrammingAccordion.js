@@ -1,8 +1,7 @@
 'use client'
-
 import { useEffect, useState } from 'react'
 
-const Programming = () => {
+const ProgrammingAccordion = () => {
   const programmingList = [
     {
       day: 'Lunes',
@@ -111,43 +110,35 @@ const Programming = () => {
   const [currentDayIndex, setCurrentDayIndex] = useState(new Date().getDay())
 
   useEffect(() => {
-    const tabs = document.querySelectorAll('.tab')
+    const collapse = document.querySelectorAll('.collapse')
 
-    tabs.forEach((tab, index) => {
+    collapse.forEach((collapse, index) => {
       if (index === currentDayIndex) {
-        tab.classList.add('checked')
+        collapse.classList.add('defaultChecked')
       } else {
-        tab.classList.remove('checked')
+        collapse.classList.remove('defaultChecked')
       }
     })
   }, [currentDayIndex])
 
   return (
-    <div role='tablist' className='hidden xl:tabs tabs-bordered justify-center text-xl'>
+    <div className='join join-vertical w-full xl:hidden'>
       {programmingList.map(({ day, dayNumber, programs }) => (
-        <>
-          <input
-            type='radio'
-            name='my_tabs_1'
-            role='tab'
-            className='tab text-2xl font-bold'
-            aria-label={day}
-            checked={currentDayIndex === dayNumber}
-            onChange={() => setCurrentDayIndex(dayNumber)}
-          />
-          <div role='tabpanel' className='tab-content p-10'>
-            <ul className='flex flex-wrap flex-col max-h-[200px]'>
-              {programs.map(({ time, name, index }) => (
-                <li key={index}>
-                  <strong className='text-secondary'>{time}</strong> - {name}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </>
+        <div key={day} className='collapse collapse-arrow join-item bg-base-100 lg:hidden'>
+          <input type='radio' name='accordion' defaultChecked={currentDayIndex === dayNumber}
+            onChange={() => setCurrentDayIndex(dayNumber)} />
+          <div className='collapse-title text-xl font-medium'>{day}</div>
+          <ul className='collapse-content'>
+            {programs.map(({ time, name, index }) => (
+              <li key={index} className='flex items-center text-balance'>
+                <strong className='text-secondary text-balance'>{time}</strong>&nbsp;-&nbsp;{name}
+              </li>
+            ))}
+          </ul>
+        </div>
       ))}
     </div>
   )
 }
 
-export default Programming
+export default ProgrammingAccordion
