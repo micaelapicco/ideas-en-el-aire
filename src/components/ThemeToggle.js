@@ -31,7 +31,7 @@ const ThemeToggle = () => {
         onChange={handleToggle}
         checked={theme === 'dark'}
         className='theme-controller'
-        value='synthwave'
+        value='dark'
       />
       <SunIcon />
       <MoonIcon />

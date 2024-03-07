@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Programming = () => {
   const programmingList = [
@@ -123,9 +123,9 @@ const Programming = () => {
   }, [currentDayIndex])
 
   return (
-    <div role='tablist' className='hidden xl:tabs tabs-bordered justify-center text-xl'>
+    <div role='tablist' className='hidden lg:tabs tabs-bordered justify-center text-xl'>
       {programmingList.map(({ day, dayNumber, programs }) => (
-        <>
+        <React.Fragment key={`${day}-${dayNumber}`}>
           <input
             type='radio'
             name='my_tabs_1'
@@ -134,17 +134,18 @@ const Programming = () => {
             aria-label={day}
             checked={currentDayIndex === dayNumber}
             onChange={() => setCurrentDayIndex(dayNumber)}
+            key={`${day}-${dayNumber}`}
           />
           <div role='tabpanel' className='tab-content p-10'>
             <ul className='flex flex-wrap flex-col max-h-[200px]'>
-              {programs.map(({ time, name, index }) => (
-                <li key={index}>
+              {programs.map(({ time, name }) => (
+                <li key={`${name}-${time}`}>
                   <strong className='text-secondary'>{time}</strong> - {name}
                 </li>
               ))}
             </ul>
           </div>
-        </>
+        </React.Fragment>
       ))}
     </div>
   )

@@ -3,7 +3,7 @@ import { IEEAlogo, Coffee, Facebook, Instagram, Youtube } from './Icons'
 
 const Footer = () => {
   return (
-    <footer className='footer footer-center p-10 bg-base-100 text-primary-content'>
+    <footer className='footer footer-center p-0 pb-[15px] mt-[20px] gap-[15px] bg-base-100 text-primary-content'>
       <aside className='text-base-content'>
         <IEEAlogo />
         <p className='font-bold'>

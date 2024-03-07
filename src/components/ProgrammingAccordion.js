@@ -129,8 +129,8 @@ const ProgrammingAccordion = () => {
             onChange={() => setCurrentDayIndex(dayNumber)} />
           <div className='collapse-title text-xl font-medium'>{day}</div>
           <ul className='collapse-content'>
-            {programs.map(({ time, name, index }) => (
-              <li key={index} className='flex items-center text-balance'>
+            {programs.map(({ time, name }) => (
+              <li key={`${dayNumber}-${time}`} className='flex items-center text-balance'>
                 <strong className='text-secondary text-balance'>{time}</strong>&nbsp;-&nbsp;{name}
               </li>
             ))}

@@ -5,9 +5,9 @@ import InstitutesCards from '@/components/InstitutesCards'
 const SanMarcosSierras = () => {
   return (
     <>
-      <header className='flex space-between mt-0 relative min-h-screen px-10 overflow-x-hidden'>
-        <div className='hero-content flex-row-reverse'>
-          <h1 className='font-bold text-8xl text-balance leading-[7rem]'>
+      <header className='hero-header'>
+        <div>
+          <h1>
             Conocé San Marcos
             <br />
             <span>Sierras</span>

@@ -5,7 +5,7 @@ import { Menu } from './Icons'
 
 const Navbar = () => {
   return (
-    <nav className='navbar bg-base-100 py-[20px] px-[30px] sticky top-0 z-10 justify-between'>
+    <nav className='navbar bg-base-100/55 py-[20px] px-[30px] sticky top-0 z-10 justify-between backdrop-blur-lg'>
       <div className='navbar-start w-full flex-row-reverse justify-between xl:w-auto'>
         <div className='dropdown dropdown-end'>
           <div tabIndex={0} role='button' className='btn btn-ghost p-0 xl:hidden'>
@@ -43,7 +43,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Link href='/quienes-somos'>Sobre nosotros</Link>
+              <Link href='/sobre-nosotros'>Sobre nosotros</Link>
             </li>
             <li>
               <ThemeToggle />
@@ -54,8 +54,9 @@ const Navbar = () => {
           <Image
             src='/logo-nav.svg'
             alt='Ideas en el aire logo'
-            width={35}
-            height={35}
+            width={0}
+            height={0}
+            className='w-auto h-auto'
           ></Image>
           <span className='font-semibold'>Ideas en el aire</span>
         </Link>
@@ -94,7 +95,7 @@ const Navbar = () => {
             </details>
           </li>
           <li>
-            <Link href='/quienes-somos'>Sobre nosotros</Link>
+            <Link href='/sobre-nosotros'>Sobre nosotros</Link>
           </li>
         </ul>
       </div>

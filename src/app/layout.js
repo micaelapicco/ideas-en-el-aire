@@ -2,6 +2,7 @@ import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import Audio from '@/components/Audio'
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
@@ -29,6 +30,7 @@ const RootLayout = ({ children }) => {
     <html lang='es'>
       <body className={`${jakarta.className} overflow-x-hidden`}>
         <Navbar />
+        <Audio />
           {children}
         <Footer />
       </body>
