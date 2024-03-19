@@ -7,7 +7,7 @@ const CardLocation = () => {
         <Image
           className='object-cover bordered h-full w-auto border-[8px] border-primary rounded-3xl'
           src='/images/imagen-11.png'
-          alt='Puente peatonal con vista al río'
+          alt='Puente peatonal con personas encima observando el cielo y un ómnibus pasando por debajo'
           width={500}
           height={500}
         />
@@ -16,7 +16,7 @@ const CardLocation = () => {
         <Image
           className='object-cover bordered h-full w-auto border-[8px] border-primary rounded-3xl'
           src='/images/imagen-1.png'
-          alt='Casa rodante en una calle de tierra rodeada de árboles'
+          alt='Mujer en medio de la calle con perro y combi atrás'
           width={450}
           height={450}
         />

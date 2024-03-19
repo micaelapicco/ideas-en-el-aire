@@ -19,16 +19,13 @@ const Navbar = () => {
               <Link href='/#programming'>Programación</Link>
             </li>
             <li>
-              <Link href='/#records'>Canal</Link>
-            </li>
-            <li>
               <Link href='/#sponsors'>Sponsors</Link>
             </li>
             <li>
               <Link href='/san-marcos-sierras'>San Marcos Sierras</Link>
               <ul className='p-2'>
                 <li>
-                  <Link href='/san-marcos-sierras/#galery'>Galería</Link>
+                  <Link href='/san-marcos-sierras/#gallery'>Galería</Link>
                 </li>
                 <li>
                   <Link href='/san-marcos-sierras/#institutes'>
@@ -67,9 +64,6 @@ const Navbar = () => {
             <Link href='/#programming'>Programación</Link>
           </li>
           <li>
-            <Link href='/#recorders'>Canal</Link>
-          </li>
-          <li>
             <Link href='/#sponsors'>Sponsors</Link>
           </li>
           <li>
@@ -79,7 +73,7 @@ const Navbar = () => {
               </summary>
               <ul className='p-2'>
                 <li>
-                  <Link href='/san-marcos-sierras/#galery'>Galería</Link>
+                  <Link href='/san-marcos-sierras/#gallery'>Galería</Link>
                 </li>
                 <li>
                   <Link href='/san-marcos-sierras/#institutes'>

@@ -82,9 +82,9 @@ const institutes = [
 
 const InstitutesCards = () => {
   return (
-    <article className='grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center'>
+    <article className='flex flex-wrap  justify-around gap-4 md:gap-8 md:justify-center'>
       {institutes.map(({ name, type, telephone, address }) => (
-        <div className='card card-side bg-base-100 shadow-xl w-[25vw]' key={name}>
+        <div className='card card-side bg-base-100 shadow-xl min-w-[150px] w-full md:max-w-[400px]' key={name}>
           <div className='card-body'>
             <div>
                 <h3 className='card-title'>{name}</h3>

@@ -6,40 +6,28 @@
   @apply text-base-content text-lg;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-base-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+
 /* Titles */
 h1 {
   @apply text-base-content text-6xl;
 }
 h2 {
   @apply text-base-content text-center text-5xl font-semibold tracking-wide text-balance mb-20 leading-tight;
-}
-
-/* Galery - san marcos sierras */
-section #galery {
-  display: flex;
-  width: auto;
-  height: 430px;
-}
-
-#galery img {
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: 0.8;
-  transition: 0.5s ease;
-}
-
-#galery img:hover {
-  cursor: auto;
-  width: 600px;
-  opacity: 1;
-  filter: contrast(120%);
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }
 
 .tabs-bordered > .tab:checked {
@@ -87,16 +75,52 @@ footer p {
   width: 1rem;
 }
 
+/* Titles style */
+
+.title-responsive {
+  @apply text-3xl sm:text-4xl md:text-5xl;
+}
+
+.title-center {
+  @apply text-4xl md:text-5xl text-center;
+}
+
+.title-left {
+  @apply text-center text-4xl pt-11 md:text-5xl md:text-left md:pt-0;
+}
+
 /* Styles for Hero */
 
 .hero-header {
-  @apply flex content-between m-0 relative overflow-x-hidden hero min-h-[calc(100vh-4rem)] px-9 xl:px-10;
+  @apply hero flex-col lg:flex-row relative min-h-[calc(100vh-4rem)];
 }
 
-.hero-header > div {
-  @apply hero-content flex-row-reverse;
+.hero-content {
+  @apply text-center md:text-left lg:w-full lg:justify-start lg:items-center lg:py-0 lg:px-0;
 }
 
-.hero-header > h1 {
-  @apply font-bold text-8xl text-balance leading-[7rem];
+.hero-content > div {
+  @apply max-w-3xl;
+}
+
+.hero-title {
+  @apply text-5xl font-bold text-balance md:text-6xl xl:text-8xl;
+  transform: translateY(-30%);
+}
+
+.hero-title strong {
+  @apply text-primary font-extrabold;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply bg-accent;
+}
+
+div.swiper-wrapper {
+  @apply h-[25rem];
+}
+
+div.swiper-button-next,
+div.swiper-button-prev {
+  @apply text-accent;
 }

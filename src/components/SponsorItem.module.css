@@ -1,0 +1,17 @@
+.article {
+  @apply mb-12 lg:mb-0 hover:scale-110 transition-all duration-200;
+}
+
+.article a {
+  @apply tooltip tooltip-primary;
+}
+
+.article a img {
+  @apply grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300 ease-in-out cursor-pointer rounded-lg shadow-lg shadow-primary w-[250px] h-[250px];
+}
+
+@media only screen and (hover: none) {
+  .article a img {
+    @apply grayscale-0 opacity-100;
+  }
+}

@@ -8,7 +8,7 @@ const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Ideas en el Aire',
-  description: 'Escuchá Ideas en el Aire en vivo por radio Quilpo',
+  description: 'Ideas en el Aire es una productora de contenido con una amplia trayectoria en radio, redes sociales y eventos. Se caracteriza por su variedad y calidad, así como por su compromiso con la comunidad y la difusión cultural.',
   keywords: [
     'Radio',
     'San Marcos Sierras',

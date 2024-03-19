@@ -79,20 +79,20 @@ const Sponsors = () => {
   return (
     <>
       <article className='pb-8'>
-        <h2 className='text-4xl md:text-5xl mb-32 text-center'>
-          Quienes <u className='text-primary'>confían</u> en nosotros
+        <h2 className='title-center'>
+          Quienes <span className='underline text-primary'>confían</span> en nosotros
         </h2>
         <SponsorsList sponsors={sponsorsList} />
       </article>
       <figure className='absolute -z-10 left-0'>
         <AssetThree />
       </figure>
-      <article className='flex flex-col items-center h-[29rem] md:flex-row md:justify-between md:h-[30rem]'>
-        <h2 className='text-center text-4xl pt-11 md:text-5xl md:text-left md:pt-0'>
+      <article className='flex flex-col items-center md:flex-row md:justify-between md:h-[30rem] px-8 sm:px-12 gap-8 py-16 md:py-0'>
+        <h2 className='title-responsive text-center md:flex-1 mb-10 md:my-0'>
           ¿Querés formar parte?
         </h2>
-        <div className='flex flex-col items-center gap-11'>
-          <p className='text-center text-balance w-full md:w-1/2'>
+        <div className='text-center md:flex-1'>
+          <p className='text-center text-balance mb-6 md:mb-12'>
             Te invitamos a que visites nuestro espacio publicitario donde
             encontraras promociones por radio, avisos, y la oportunidad de
             aparecer junto a nuestros sponsors

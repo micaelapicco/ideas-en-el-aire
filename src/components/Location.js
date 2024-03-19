@@ -12,7 +12,7 @@ const Location = () => {
         <img className='mask mask-parallelogram' src='images/imagen-3.jpg' />
       </div> */}
         <header className='flex flex-col items-center text-center space-y-12 max-w-[500px] px-14 xl:px-0'>
-          <h2 id='location' className='mb-0 text-4xl md:text-5xl'>
+          <h2 id='location' className='title-center mb-0'>
             ¡Conocé donde nos encontramos!
           </h2>
       <p className='text-balance'>

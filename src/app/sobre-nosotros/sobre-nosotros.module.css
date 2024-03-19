@@ -1,0 +1,97 @@
+.marquee {
+  @apply select-none uppercase text-6xl font-black overflow-y-hidden p-2;
+  color: oklch(var(--p));
+}
+
+.marquee:nth-child(1) {
+  @apply mt-1;
+}
+
+.marquee:nth-child(2) {
+  @apply font-medium text-5xl text-white mb-1;
+}
+
+.marquee span {
+  margin: auto 10px auto 10px;
+}
+
+.marqueeWrapper {
+  @apply border-t-8 border-b-8 border-solid;
+  border-image: linear-gradient(
+      90deg,
+      oklch(var(--p)),
+      oklch(var(--s)),
+      oklch(var(--a))
+    )
+    5;
+}
+
+.statBorder {
+  border-image: linear-gradient(
+      180deg,
+      oklch(var(--p)),
+      oklch(var(--s)),
+      oklch(var(--a))
+    )
+    3;
+  --tw-border-opacity: 0.1;
+  border-image-width: 3px;
+  border-image-slice: 0 1 0;
+}
+
+.statTitle {
+  @apply text-3xl text-secondary font-medium select-none;
+}
+
+.statValue {
+  @apply text-7xl select-none;
+}
+
+.statDesc {
+  @apply text-2xl text-white select-none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .statBorder {
+    border-image: linear-gradient(
+        90deg,
+        oklch(var(--p)),
+        oklch(var(--s)),
+        oklch(var(--a))
+      )
+      3;
+    --tw-border-opacity: 0.1;
+    border-image-width: 3px;
+    border-image-slice: 1 0;
+  }
+}
+
+.features {
+  @apply max-w-6xl px-24;
+}
+
+.feature {
+  @apply flex justify-start items-center gap-5 mb-5;
+}
+
+.feature div {
+  @apply flex flex-col;
+}
+
+.feature span {
+  @apply float-left text-secondary;
+}
+
+.feature h3 {
+  @apply flex items-center text-xl font-semibold text-secondary gap-2;
+}
+
+.stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px oklch(var(--s));
+  transition: all 250ms ease;
+}
+
+.stroke:hover {
+  color: oklch(var(--s));
+}

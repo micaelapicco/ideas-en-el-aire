@@ -6,15 +6,26 @@ import Location from '@/components/Location'
 import Sponsors from '@/components/Sponsors'
 import ProgrammingAccordion from '@/components/ProgrammingAccordion'
 import { Play } from '../components/Icons'
+import HeroTitle from '@/components/Hero/HeroTitle'
+import HeroParagraph from '@/components/Hero/HeroParagraph'
 
 const Home = () => {
   return (
     <>
-      <Hero />
+      <Hero>
+        <HeroTitle>
+          Escuchanos en vivo por{' '}
+          <strong>100.7 FM</strong>
+        </HeroTitle>
+        <HeroParagraph>
+          ¡Déjate llevar por la música y las historias que inspiran en Ideas
+          en el Aire, estés donde estés!
+        </HeroParagraph>
+      </Hero>
       <main className='min-h-screen'>
         <AssetTwo />
         <Section id='programming'>
-          <h2 className='flex justify-center items-center text-4xl md:text-5xl'>
+          <h2 className='title-center flex justify-center items-center'>
             Nuestra programación&nbsp;
             <Play />
           </h2>

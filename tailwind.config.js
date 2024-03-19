@@ -25,7 +25,7 @@ export const daisyui = {
       dark: {
         ...dark,
         primary: '#8B1874',
-        secondary: '#B71375',
+        secondary: '#df168f',
         accent: '#FC4F00',
         'base-100': '#1F1D1D',
         'base-content': '#FBFBFE'
@@ -35,7 +35,7 @@ export const daisyui = {
       light: {
         ...light,
         primary: '#8B1874',
-        secondary: '#B71375',
+        secondary: '#df168f',
         accent: '#FC4F00',
         'base-100': '#FCFAF8',
         'base-content': '#130E01'
