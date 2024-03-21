@@ -8,7 +8,7 @@
 }
 
 .marquee:nth-child(2) {
-  @apply font-medium text-5xl text-white mb-1;
+  @apply font-medium text-5xl text-base-content mb-1;
 }
 
 .marquee span {
@@ -48,7 +48,7 @@
 }
 
 .statDesc {
-  @apply text-2xl text-white select-none;
+  @apply text-2xl text-base-content select-none;
 }
 
 @media only screen and (max-width: 1024px) {

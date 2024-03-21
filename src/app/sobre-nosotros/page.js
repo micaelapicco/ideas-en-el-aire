@@ -58,30 +58,51 @@ const QuienesSomos = () => {
       <main className='pb-10 pt-24 min-h-screen'>
         <Section id='aboutUs'>
           <div className={styles.marqueeWrapper}>
-            <Marquee className={`${styles.marquee} ${poppins.className}`} speed={30} autoFill>
-              { renderWords(identityWords) }
+            <Marquee
+              className={`${styles.marquee} ${poppins.className}`}
+              speed={30}
+              autoFill
+            >
+              {renderWords(identityWords)}
             </Marquee>
-            <Marquee className={`${styles.marquee} ${poppins.className}`} speed={30} direction='right' autoFill>
-              { renderWords(contentWords) }
+            <Marquee
+              className={`${styles.marquee} ${poppins.className}`}
+              speed={30}
+              direction='right'
+              autoFill
+            >
+              {renderWords(contentWords)}
             </Marquee>
           </div>
           <article className='stats flex justify-center items-center mt-36'>
             <div className='stats stats-vertical lg:stats-horizontal shadow'>
-            <div className='stat'>
-              <div className={`stat-title ${styles.statTitle}`}>Antiguedad</div>
-              <div className={`stat-value ${styles.statValue}`}><span className='text-accent'>+</span>10</div>
-              <div className={`stat-desc ${styles.statDesc}`}>años</div>
-            </div>
-            <div className={`stat ${styles.statBorder}`}>
-              <div className={`stat-title ${styles.statTitle}`}>Desde</div>
-              <div className={`stat-value ${styles.statValue}`}>1756</div>
-              <div className={`stat-desc ${styles.statDesc}`}>interés municipal</div>
-            </div>
-            <div className='stat border-l-transparent'>
-              <div className={`stat-title ${styles.statTitle}`}>Seguidores</div>
-              <div className={`stat-value ${styles.statValue}`}><span className='text-accent'>+</span>600</div>
-              <div className={`stat-desc ${styles.statDesc}`}>en Instagram</div>
-            </div>
+              <div className='stat'>
+                <div className={`stat-title ${styles.statTitle}`}>
+                  Antiguedad
+                </div>
+                <div className={`stat-value ${styles.statValue}`}>
+                  <span className='text-accent'>+</span>10
+                </div>
+                <div className={`stat-desc ${styles.statDesc}`}>años</div>
+              </div>
+              <div className={`stat ${styles.statBorder}`}>
+                <div className={`stat-title ${styles.statTitle}`}>Desde</div>
+                <div className={`stat-value ${styles.statValue}`}>1756</div>
+                <div className={`stat-desc ${styles.statDesc}`}>
+                  interés municipal
+                </div>
+              </div>
+              <div className='stat border-l-transparent'>
+                <div className={`stat-title ${styles.statTitle}`}>
+                  Seguidores
+                </div>
+                <div className={`stat-value ${styles.statValue}`}>
+                  <span className='text-accent'>+</span>600
+                </div>
+                <div className={`stat-desc ${styles.statDesc}`}>
+                  en Instagram
+                </div>
+              </div>
             </div>
           </article>
           <article className='flex flex-col justify-items-center place-items-center mt-36'>
@@ -90,23 +111,36 @@ const QuienesSomos = () => {
             </h2>
             <ul className={styles.features}>
               <li className={styles.feature}>
-                <span><Hashtag /></span>
+                <span>
+                  <Hashtag />
+                </span>
                 <div>
                   <h3>Productora</h3>
-                  <p>Radio, redes sociales, ediciones, programas en vivo, producción, programación, spots, publicidad, eventos.</p>
+                  <p>
+                    Radio, redes sociales, ediciones, programas en vivo,
+                    producción, programación, spots, publicidad, eventos.
+                  </p>
                 </div>
               </li>
               <div className='divider' />
               <li className={styles.feature}>
-                <span><LiveAudio /></span>
+                <span>
+                  <LiveAudio className='w-12 h-12' />
+                </span>
                 <div>
                   <h3>Experiencia en el rubro</h3>
-                  <p>Investigación musical, difusión de diversos géneros, notas, entrevistas a artistas locales, nacionales e internacionales.</p>
+                  <p>
+                    Investigación musical, difusión de diversos géneros, notas,
+                    entrevistas a artistas locales, nacionales e
+                    internacionales.
+                  </p>
                 </div>
               </li>
               <div className='divider' />
               <li className={styles.feature}>
-                <span><Museum /></span>
+                <span>
+                  <Museum />
+                </span>
                 <div>
                   <h3>Difusión cultural</h3>
                   <p>Trabajo de investigadores científicos, ambientalistas.</p>
@@ -114,7 +148,9 @@ const QuienesSomos = () => {
               </li>
               <div className='divider' />
               <li className={styles.feature}>
-                <span><Address /></span>
+                <span>
+                  <Address className='w-12 h-12' />
+                </span>
                 <div>
                   <h3>Información útil y práctica</h3>
                   <p>San Marcos Sierras.</p>
@@ -122,7 +158,9 @@ const QuienesSomos = () => {
               </li>
               <div className='divider' />
               <li className={styles.feature}>
-                <span><Community /></span>
+                <span>
+                  <Community />
+                </span>
                 <div>
                   <h3>Contacto con la comunidad</h3>
                   <p>Nexo entre vecinos, comunicación.</p>
@@ -130,7 +168,9 @@ const QuienesSomos = () => {
               </li>
               <div className='divider' />
               <li className={styles.feature}>
-                <span><Music /></span>
+                <span>
+                  <Music />
+                </span>
                 <div>
                   <h3>Compañía musical reconocida</h3>
                   <p>Variedad y calidad de selección.</p>

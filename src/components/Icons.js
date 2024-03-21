@@ -133,9 +133,10 @@ export const Youtube = () => {
   )
 }
 
-export const Address = () => {
+export const Address = (props) => {
   return (
     <svg
+      {...props}
       xmlns='http://www.w3.org/2000/svg'
       width='1em'
       height='1em'
@@ -320,9 +321,10 @@ export const PauseAudio = (props) => {
   )
 }
 
-export const LiveAudio = () => {
+export const LiveAudio = (props) => {
   return (
     <svg
+      {...props}
       xmlns='http://www.w3.org/2000/svg'
       width='1.5em'
       height='1.5em'
