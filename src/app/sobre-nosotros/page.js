@@ -87,7 +87,7 @@ const QuienesSomos = () => {
               </div>
               <div className={`stat ${styles.statBorder}`}>
                 <div className={`stat-title ${styles.statTitle}`}>Desde</div>
-                <div className={`stat-value ${styles.statValue}`}>1756</div>
+                <div className={`stat-value ${styles.statValue}`}>2015</div>
                 <div className={`stat-desc ${styles.statDesc}`}>
                   interés municipal
                 </div>

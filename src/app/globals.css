@@ -106,6 +106,18 @@ footer p {
 .hero-title {
   @apply text-5xl font-bold text-balance md:text-6xl xl:text-8xl;
   transform: translateY(-30%);
+  text-shadow: 5px 5px 0 oklch(var(--b1)), 5px -5px 0 oklch(var(--b1)),
+    -5px 5px 0 oklch(var(--b1)), -5px -5px 0 oklch(var(--b1)),
+    5px 0px 0 oklch(var(--b1)), 0px 5px 0 oklch(var(--b1)),
+    -5px 0px 0 oklch(var(--b1)), 0px -5px 0 oklch(var(--b1));
+}
+
+.hero-paragraph {
+  @apply w-4/5 -translate-y-[10%] xl:-translate-y-[30%];
+  text-shadow: 1px 1px 0 oklch(var(--b1)), 1px -1px 0 oklch(var(--b1)),
+    -1px 1px 0 oklch(var(--b1)), -1px -1px 0 oklch(var(--b1)),
+    1px 0px 0 oklch(var(--b1)), 0px 1px 0 oklch(var(--b1)),
+    -1px 0px 0 oklch(var(--b1)), 0px -1px 0 oklch(var(--b1));
 }
 
 .hero-title strong {
@@ -124,3 +136,9 @@ div.swiper-button-next,
 div.swiper-button-prev {
   @apply text-accent;
 }
+
+/* @media only screen and (max-width: 1560px) {
+  .hero-content > div {
+    @apply pl-9;
+  }
+} */

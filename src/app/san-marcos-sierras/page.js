@@ -13,9 +13,14 @@ const SanMarcosSierras = () => {
         <HeroTitle>
           Conocé{' '}
           <strong>
-            San <br /> Marcos Sierras
+            San Marcos Sierras
           </strong>
         </HeroTitle>
+        <HeroParagraph>
+          San Marcos Sierras ubicado entre las Sierras de Córdoba, Argentina, es un lugar único en el mundo, con paisajes
+          increíbles, una comunidad cálida y una cultura que se respira en cada
+          rincón.
+        </HeroParagraph>
       </Hero>
       <main className='px-8 pb-10 pt-24 min-h-screen'>
         <Section className='pictures' id='gallery'>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroParagraph = ({ children }) => {
   return (
-    <p className='-translate-y-[30%]'>
+    <p className='hero-paragraph'>
       {children}
     </p>
   )

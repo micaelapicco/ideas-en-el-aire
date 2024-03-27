@@ -4,63 +4,26 @@ export const Coffee = () => {
       xmlns='http://www.w3.org/2000/svg'
       width='1.5em'
       height='1.5em'
-      viewBox='0 0 24 24'
+      viewBox='0 0 520 434'
+      fill='none'
     >
-      <mask id='IconifyId18deaf57c6e69cb2e1'>
-        <path
-          fill='#fff'
-          d='M5 6C5 4 7 6 11.5 6C16 6 19 4 19 6L19 7C19 8.5 17 9 12.5 9C8 9 5 9 5 7L5 6Z'
-        />
-      </mask>
-      <g
-        fill='none'
-        stroke='currentColor'
-        strokeLinecap='round'
-        strokeLinejoin='round'
-        strokeWidth='2'
-      >
-        <path
-          strokeDasharray='32'
-          strokeDashoffset='32'
-          d='M7.5 10.5C7.5 10.5 8.33 17.43 8.5 19C8.67 20.57 10 21 11 21L13 21C14.5 21 15.875 19.86 16 19C16.125 18.14 17 7 17 7'
-        >
-          <animate
-            fill='freeze'
-            attributeName='stroke-dashoffset'
-            dur='0.4s'
-            values='32;0'
-          />
-        </path>
-        <path
-          strokeDasharray='12'
-          strokeDashoffset='12'
-          d='M16.5 6C16.5 3.5 14 3 12 3C10 3 9.1 3.43 8 4'
-        >
-          <animate
-            fill='freeze'
-            attributeName='stroke-dashoffset'
-            begin='0.8s'
-            dur='0.2s'
-            values='12;24'
-          />
-        </path>
-      </g>
-      <rect
-        width='16'
-        height='5'
-        x='20'
-        y='4'
+      <path
+        d='M60.0068 216.422C59.4514 178.085 92.9561 170.165 107 171.065L104.839 257.999C69.4055 254.543 60.1869 228.841 60.0068 216.422Z'
         fill='currentColor'
-        mask='url(#IconifyId18deaf57c6e69cb2e1)'
-      >
-        <animate
-          fill='freeze'
-          attributeName='x'
-          begin='0.4s'
-          dur='0.4s'
-          values='20;4'
-        />
-      </rect>
+        stroke='currentColor'
+      />
+      <path
+        d='M413.995 374.499C403.5 387.998 362.495 418.317 282.995 418.999C244.162 419.332 156.496 396.799 108.496 301.999C77.9964 301.166 17.9955 291.899 15.9954 215.499C14.8288 186.332 36.5009 124.998 108.496 128.999C203.614 -38.8594 399.891 -1.33282 464 114C480.906 145.457 494.731 180.655 492.5 224C488.152 308.474 451.425 343.72 451.5 346.5'
+        stroke='currentColor'
+        strokeWidth='30'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M435.756 379.23C441.225 381.053 447.255 379.581 451.268 375.442C455.281 371.304 456.568 365.232 454.577 359.822L430.424 294.157C437.683 279.526 445.296 258.16 448.309 234.323C451.775 206.899 449.296 174.846 431.575 146.124C423.013 129.879 405.909 107.134 381.275 89.1008C356.35 70.854 323.086 57.0173 283.024 60.5515C255.821 60.1266 197.86 75.3147 157.575 135.722C142.569 158.059 122.449 213.633 144.981 272.836L145 272.885C154.48 297.534 185.618 344.851 243.756 364.23C243.9 364.278 244.044 364.324 244.189 364.367C265.028 370.619 318.029 379.129 365.319 355.751L435.756 379.23Z'
+        stroke='currentColor'
+        strokeWidth='30'
+        strokeLinejoin='round'
+      />
     </svg>
   )
 }
