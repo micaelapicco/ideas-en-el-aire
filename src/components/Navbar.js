@@ -69,7 +69,7 @@ const Navbar = () => {
           <li>
             <details>
               <summary>
-                <Link href='/san-marcos-sierras'>San Marcos Sierras</Link>
+                San Marcos Sierras
               </summary>
               <ul className='p-2'>
                 <li>

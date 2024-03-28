@@ -103,6 +103,12 @@ footer p {
   @apply max-w-3xl;
 }
 
+@media only screen and (max-width: 1600px) {
+  .hero-content {
+    @apply pl-6;
+  }
+}
+
 .hero-title {
   @apply text-5xl font-bold text-balance md:text-6xl xl:text-8xl;
   transform: translateY(-30%);
@@ -113,7 +119,7 @@ footer p {
 }
 
 .hero-paragraph {
-  @apply w-4/5 -translate-y-[10%] xl:-translate-y-[30%];
+  @apply w-full lg:w-4/5 -translate-y-[10%] xl:-translate-y-[30%];
   text-shadow: 1px 1px 0 oklch(var(--b1)), 1px -1px 0 oklch(var(--b1)),
     -1px 1px 0 oklch(var(--b1)), -1px -1px 0 oklch(var(--b1)),
     1px 0px 0 oklch(var(--b1)), 0px 1px 0 oklch(var(--b1)),
@@ -136,9 +142,3 @@ div.swiper-button-next,
 div.swiper-button-prev {
   @apply text-accent;
 }
-
-/* @media only screen and (max-width: 1560px) {
-  .hero-content > div {
-    @apply pl-9;
-  }
-} */
