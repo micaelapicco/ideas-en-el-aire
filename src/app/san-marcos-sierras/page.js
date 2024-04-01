@@ -1,5 +1,5 @@
 import Section from '../../components/Section'
-import { AssetOne, AssetPrimary } from '../../assets/assets'
+import { AssetOne } from '../../assets/assets'
 import InstitutesCards from '@/components/InstitutesCards'
 import Slider from '@/components/Slider'
 import Hero from '@/components/Hero'
