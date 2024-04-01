@@ -1,5 +1,5 @@
 .locationCardsWrapper {
-  @apply hidden absolute max-w-full xl:flex justify-between skew-y-[4deg] -skew-x-[4deg] w-full -z-10;
+  @apply hidden absolute max-w-full justify-between skew-y-[4deg] -skew-x-[4deg] w-full -z-10;
 }
 
 .locationCard {
@@ -18,12 +18,8 @@
   @apply object-cover bordered h-full w-auto border-[8px] border-primary rounded-3xl;
 }
 
-@media only screen and (min-width: 1280px) {
-  .leftCard {
-    @apply -left-48;
-  }
-
-  .rightCard {
-    @apply -right-48;
+@media only screen and (min-width: 1565px) {
+  .locationCardsWrapper {
+    @apply flex;
   }
 }
