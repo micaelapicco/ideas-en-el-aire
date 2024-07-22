@@ -18,7 +18,7 @@ const Programming = () => {
         { time: '17:00 hs', name: 'Latino' },
         { time: '18:00 hs', name: 'Sale mate' },
         { time: '19:00 hs', name: 'TV Vespertina en colores (TVC)' },
-        { time: '20:00 hs', name: 'Soñando barcos..4' }
+        { time: '20:00 hs', name: 'Soñando barcos' }
       ]
     },
     {
