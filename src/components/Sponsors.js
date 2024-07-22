@@ -74,6 +74,16 @@ const Sponsors = () => {
       title: 'Casa Malvón',
       image: '/images/Casa-Malvon.png',
       link: 'mailto:servicios@indot.com.ar'
+    },
+    {
+      title: 'Café Potosi',
+      image: '/images/cafe-potosi.png',
+      link: ''
+    },
+    {
+      title: 'Carlos Bagnarelli & Abogados Asociados',
+      image: '/images/Carlos-BAGNARELLI.png',
+      link: ''
     }
   ]
   return (
