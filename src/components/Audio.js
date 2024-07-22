@@ -16,7 +16,7 @@ const Audio = () => {
 
   return (
     <div className='fixed bottom-0 left-0 w-full h-14 bg-base-100/55 py-[10px] px-[30px] z-10 justify-center items-center backdrop-blur-lg'>
-      <audio ref={audio} className='hidden' src={radioSrc} controls />
+      <audio ref={audio} className='hidden' src={radioSrc} controls autoplay/>
       <ul className='flex justify-center items-center gap-2'>
         {!isPlaying
           ? (
